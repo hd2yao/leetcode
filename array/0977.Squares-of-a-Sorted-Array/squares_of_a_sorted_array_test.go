@@ -30,10 +30,13 @@ func TestSortedSquares(t *testing.T) {
             para0977{[]int{1}},
             ans0977{[]int{1}},
         },
-
         {
             para0977{[]int{-7, -3, 2, 3, 11}},
             ans0977{[]int{4, 9, 9, 49, 121}},
+        },
+        {
+            para0977{[]int{-5, -3, -2, -1}},
+            ans0977{[]int{1, 4, 9, 25}},
         },
     }
 
