@@ -43,7 +43,7 @@ func TestMinSubArrayLen(t *testing.T) {
 
     for _, q := range qs {
         expected, p := q.ans0209, q.para0209
-        fmt.Printf("【input】:%v\n【expected】:%v\n【output】:%v\n", p, expected, minSubArrayLen(p.target, p.nums))
+        fmt.Printf("【input】:%v\n【expected】:%v\n【output】:%v\n", p, expected, minSubArrayLenOptimize(p.target, p.nums))
         fmt.Println()
     }
 
