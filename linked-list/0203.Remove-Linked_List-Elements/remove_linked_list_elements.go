@@ -1,10 +1,9 @@
 package _203_Remove_Linked_List_Elements
 
+import "github.com/hd2yao/leetcode/structures"
+
 // ListNode Definition for singly-linked list.
-type ListNode struct {
-    Val  int
-    Next *ListNode
-}
+type ListNode = structures.ListNode
 
 // 原链表删除元素
 func removeElements(head *ListNode, val int) *ListNode {
