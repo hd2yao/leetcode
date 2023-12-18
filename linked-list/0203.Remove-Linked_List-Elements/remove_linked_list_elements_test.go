@@ -2,8 +2,9 @@ package _203_Remove_Linked_List_Elements
 
 import (
 	"fmt"
-	"github.com/hd2yao/leetcode/structures"
 	"testing"
+
+	"github.com/hd2yao/leetcode/structures"
 )
 
 type question0203 struct {
