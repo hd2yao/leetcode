@@ -14,7 +14,8 @@ func List2Ints(head *ListNode) []int {
 	limit := 100
 	times := 0
 
-	var result []int
+	// var result []int 仅创建了一个切片变量，没有分配底层数组，此时 result 是一个 nil 切片
+	result := []int{}
 	for head != nil {
 		times++
 		if times > limit {
