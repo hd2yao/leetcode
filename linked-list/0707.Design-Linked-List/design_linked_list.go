@@ -1,19 +1,21 @@
 package _707_Design_Linked_List
 
+// 单链表
+
 type MyLinkedList struct {
     Len       int
-    DummyHead *Node
+    DummyHead *SingleListNode
 }
 
-type Node struct {
+type SingleListNode struct {
     Val  int
-    Next *Node
+    Next *SingleListNode
 }
 
 func Constructor() MyLinkedList {
     return MyLinkedList{
         Len:       0,
-        DummyHead: &Node{Next: nil},
+        DummyHead: &SingleListNode{},
     }
 }
 
@@ -21,21 +23,20 @@ func (this *MyLinkedList) Get(index int) int {
     if index >= this.Len {
         return -1
     }
-    count := 0
     cur := this.DummyHead
-    for count < index {
+    for index > 0 {
         cur = cur.Next
-        count++
+        index--
     }
     return cur.Next.Val
 }
 
 func (this *MyLinkedList) AddAtHead(val int) {
     if this.DummyHead.Next == nil {
-        this.DummyHead.Next = &Node{Val: val}
+        this.DummyHead.Next = &SingleListNode{Val: val}
     } else {
-        cur := this.DummyHead.Next
-        this.DummyHead.Next = &Node{Val: val, Next: cur}
+        newNode := &SingleListNode{Val: val, Next: this.DummyHead.Next}
+        this.DummyHead.Next = newNode
     }
     this.Len++
 }
@@ -45,20 +46,19 @@ func (this *MyLinkedList) AddAtTail(val int) {
     for cur.Next != nil {
         cur = cur.Next
     }
-    cur.Next = &Node{Val: val, Next: nil}
+    cur.Next = &SingleListNode{Val: val, Next: nil}
     this.Len++
 }
 
 func (this *MyLinkedList) AddAtIndex(index int, val int) {
     if this.Get(index) != -1 {
         cur := this.DummyHead
-        count := 0
-        for count < index {
+        for index > 0 {
             cur = cur.Next
-            count++
+            index--
         }
-        tmp := cur.Next
-        cur.Next = &Node{Val: val, Next: tmp}
+        newNode := &SingleListNode{Val: val, Next: cur.Next}
+        cur.Next = newNode
         this.Len++
     } else if this.Len == index {
         this.AddAtTail(val)
@@ -68,10 +68,9 @@ func (this *MyLinkedList) AddAtIndex(index int, val int) {
 func (this *MyLinkedList) DeleteAtIndex(index int) {
     if this.Get(index) != -1 {
         cur := this.DummyHead
-        count := 0
-        for count < index {
+        for index > 0 {
             cur = cur.Next
-            count++
+            index--
         }
         cur.Next = cur.Next.Next
         this.Len--
