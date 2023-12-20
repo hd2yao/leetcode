@@ -2,8 +2,9 @@ package _206_Reverse_Linked_List
 
 import (
     "fmt"
-    "github.com/hd2yao/leetcode/structures"
     "testing"
+
+    "github.com/hd2yao/leetcode/structures"
 )
 
 type question0206 struct {
@@ -31,7 +32,7 @@ func TestReverseList(t *testing.T) {
         },
     }
 
-    fmt.Printf("------------------------Leetcode Problem 203------------------------\n")
+    fmt.Printf("------------------------Leetcode Problem 206------------------------\n")
 
     for _, q := range qs {
         expected, p := q.ans0206, q.para0206
