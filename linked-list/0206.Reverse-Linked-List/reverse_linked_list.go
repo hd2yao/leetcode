@@ -32,3 +32,15 @@ func reverseListTwoPointer(head *ListNode) *ListNode {
     }
     return pre
 }
+
+// 双指针法(优化), 使用 head 代替 cur
+func reverseListTwoPointerOptimize(head *ListNode) *ListNode {
+    var pre *ListNode
+    for head != nil {
+        tmp := head.Next
+        head.Next = pre
+        pre = head
+        head = tmp
+    }
+    return pre
+}
