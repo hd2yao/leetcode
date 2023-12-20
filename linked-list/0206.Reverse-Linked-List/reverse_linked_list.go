@@ -17,6 +17,18 @@ func reverseListWithDummy(head *ListNode) *ListNode {
         dummyHead.Next.Next = head
         head = dummyHead.Next
     }
-
     return head
+}
+
+// 双指针法
+func reverseListTwoPointer(head *ListNode) *ListNode {
+    var pre *ListNode
+    cur := head
+    for cur != nil {
+        tmp := cur.Next
+        cur.Next = pre
+        pre = cur
+        cur = tmp
+    }
+    return pre
 }
