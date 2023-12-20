@@ -13,7 +13,7 @@ type Node struct {
 func Constructor() MyLinkedList {
     return MyLinkedList{
         Len:       0,
-        DummyHead: &Node{},
+        DummyHead: &Node{Next: nil},
     }
 }
 
@@ -34,8 +34,8 @@ func (this *MyLinkedList) AddAtHead(val int) {
     if this.DummyHead.Next == nil {
         this.DummyHead.Next = &Node{Val: val}
     } else {
-        //cur := this.DummyHead.Next
-        this.DummyHead.Next = &Node{Val: val, Next: this.DummyHead.Next.Next}
+        cur := this.DummyHead.Next
+        this.DummyHead.Next = &Node{Val: val, Next: cur}
     }
     this.Len++
 }
@@ -57,7 +57,8 @@ func (this *MyLinkedList) AddAtIndex(index int, val int) {
             cur = cur.Next
             count++
         }
-        cur.Next = &Node{Val: val, Next: cur.Next.Next}
+        tmp := cur.Next
+        cur.Next = &Node{Val: val, Next: tmp}
         this.Len++
     } else if this.Len == index {
         this.AddAtTail(val)
