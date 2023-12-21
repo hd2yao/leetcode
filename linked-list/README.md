@@ -21,4 +21,11 @@
     + [Leetcode](https://leetcode.cn/problems/reverse-linked-list/)
     + [hd2yao](https://github.com/hd2yao/leetcode/tree/master/linked-list/0206.Reverse-Linked-List)
 
+### 4. 两两交换链表中的节点
++ 0024
+  + 2023.12.21
+  + [代码随想录](https://www.programmercarl.com/0024.%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9.html#%E7%AE%97%E6%B3%95%E5%85%AC%E5%BC%80%E8%AF%BE)
+  + [Leetcode](https://leetcode.cn/problems/swap-nodes-in-pairs/)
+  + [hd2yao](https://github.com/hd2yao/leetcode/tree/linked-list/linked-list/0024.Swap-Nodes-in-Pairs)
+
 
