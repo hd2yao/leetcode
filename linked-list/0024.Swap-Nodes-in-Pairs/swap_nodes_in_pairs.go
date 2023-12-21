@@ -1,8 +1,6 @@
 package _024_Swap_Nodes_in_Pairs
 
-import (
-    "github.com/hd2yao/leetcode/structures"
-)
+import "github.com/hd2yao/leetcode/structures"
 
 type ListNode = structures.ListNode
 
@@ -24,4 +22,22 @@ func swapPairs(head *ListNode) *ListNode {
     }
 
     return dummyHead.Next
+}
+
+// 递归
+
+func swapPairsRecursive(head *ListNode) *ListNode {
+    dummyHead := &ListNode{Next: head}
+    cur := dummyHead
+    swap(cur, head)
+    return dummyHead.Next
+}
+
+func swap(cur, head *ListNode) {
+    if cur.Next != nil && cur.Next.Next != nil {
+        cur.Next = head.Next
+        head.Next = head.Next.Next
+        cur.Next.Next = head
+        swap(head, head.Next)
+    }
 }
