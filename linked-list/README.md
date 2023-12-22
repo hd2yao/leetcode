@@ -35,5 +35,11 @@
   + [Leetcode](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)
   + [hd2yao](https://github.com/hd2yao/leetcode/tree/linked-list/linked-list/0019.Remove-Nth-Node-from-End-of-List)
 
+### 6. 相交链表
++ 0160
+  + 2023.12.22
+  + [代码随想录](https://www.programmercarl.com/%E9%9D%A2%E8%AF%95%E9%A2%9802.07.%E9%93%BE%E8%A1%A8%E7%9B%B8%E4%BA%A4.html#%E6%80%9D%E8%B7%AF)
+  + [Leetcode](https://leetcode.cn/problems/intersection-of-two-linked-lists/)
+  + [hd2yao](https://github.com/hd2yao/leetcode/tree/linked-list/linked-list/0160.Intersection-of-Two-Linked-List)
 
 
