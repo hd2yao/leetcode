@@ -2,8 +2,9 @@ package _019_Remove_Nth_Node_from_End_of_List
 
 import (
     "fmt"
-    "github.com/hd2yao/leetcode/structures"
     "testing"
+
+    "github.com/hd2yao/leetcode/structures"
 )
 
 type question0019 struct {
@@ -36,7 +37,7 @@ func TestRemoveNthFromEnd(t *testing.T) {
         },
     }
 
-    fmt.Printf("------------------------Leetcode Problem 24-------------------------\n")
+    fmt.Printf("------------------------Leetcode Problem 19-------------------------\n")
 
     for _, q := range qs {
         expected, p := q.ans0019, q.param0019
