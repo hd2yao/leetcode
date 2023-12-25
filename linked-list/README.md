@@ -42,4 +42,13 @@
   + [Leetcode](https://leetcode.cn/problems/intersection-of-two-linked-lists/)
   + [hd2yao](https://github.com/hd2yao/leetcode/tree/linked-list/linked-list/0160.Intersection-of-Two-Linked-List)
 
+### 7. 环形链表 II
++ 0142
+    + 2023.12.25
+    + [代码随想录](https://www.programmercarl.com/0142.%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8II.html#%E7%AE%97%E6%B3%95%E5%85%AC%E5%BC%80%E8%AF%BE)
+    + [Leetcode](https://leetcode.cn/problems/linked-list-cycle-ii/)
+    + [hd2yao](https://github.com/hd2yao/leetcode/tree/linked-list/linked-list/0142.Linked-List-Cycle-II)
 
+### 总结
+**思维导图**
+![思维导图](yuque_mind.jpeg)
