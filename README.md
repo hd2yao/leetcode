@@ -20,3 +20,6 @@
 + 删除链表的倒数第 N 个结点
 + 链表相交
 + 环形链表II
+
+### [哈希表](https://github.com/hd2yao/leetcode/tree/master/hash)
++ 有效的字母异位词
