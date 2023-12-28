@@ -24,3 +24,4 @@
 ### [哈希表](https://github.com/hd2yao/leetcode/tree/master/hash)
 + 有效的字母异位词
 + 两个数组的交集
++ 快乐数
