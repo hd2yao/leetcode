@@ -20,3 +20,10 @@
   + [代码随想录](https://www.programmercarl.com/0202.%E5%BF%AB%E4%B9%90%E6%95%B0.html#%E6%80%9D%E8%B7%AF)
   + [Leetcode](https://leetcode.cn/problems/happy-number/)
   + [hd2yao](https://github.com/hd2yao/leetcode/tree/master/hash/0202.Happy-Number)
+
+### 4. 两数之和
++ 0001
+  + 2023.12.29
+  + [代码随想录](https://www.programmercarl.com/0001.%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C.html#%E7%AE%97%E6%B3%95%E5%85%AC%E5%BC%80%E8%AF%BE)
+  + [Leetcode](https://leetcode.cn/problems/two-sum/)
+  + [hd2yao](https://github.com/hd2yao/leetcode/tree/master/hash/0001.Two-Sum)
