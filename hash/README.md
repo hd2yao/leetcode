@@ -29,8 +29,15 @@
   + [hd2yao](https://github.com/hd2yao/leetcode/tree/master/hash/0001.Two-Sum)
 
 ### 5. 四数相加II
-+ 0001
-  + 2023.12.29
++ 0454
+  + 2024.1.2
   + [代码随想录](https://www.programmercarl.com/0454.%E5%9B%9B%E6%95%B0%E7%9B%B8%E5%8A%A0II.html#%E7%AE%97%E6%B3%95%E5%85%AC%E5%BC%80%E8%AF%BE)
   + [Leetcode](https://leetcode.cn/problems/4sum-ii/)
   + [hd2yao](https://github.com/hd2yao/leetcode/tree/master/hash/0454.4Sum-II)
+
+### 6. 赎金信
++ 0383
+  + 2024.1.3
+  + [代码随想录](https://www.programmercarl.com/0383.%E8%B5%8E%E9%87%91%E4%BF%A1.html#%E6%80%9D%E8%B7%AF)
+  + [Leetcode](https://leetcode.cn/problems/ransom-note/)
+  + [hd2yao](https://github.com/hd2yao/leetcode/tree/master/hash/0383.Ransom-Note)
