@@ -112,32 +112,40 @@ func twoSum(nums []int, left, right int, target int, cur []int, res *[][]int) {
 // 解法三 map
 func fourSum2(nums []int, target int) [][]int {
 	res := [][]int{}
+
+	// 统计 nums 中各个数值的个数
 	counter := map[int]int{}
 	for _, value := range nums {
 		counter[value]++
 	}
 
+	// 从 map 中获取 key，即 nums 中去重的数值，并进行排序
 	uniqNums := []int{}
 	for key := range counter {
 		uniqNums = append(uniqNums, key)
 	}
 	sort.Ints(uniqNums)
 
+	// 依次组合
 	for i := 0; i < len(uniqNums); i++ {
+		// 4 * 1 组合
 		if (uniqNums[i]*4 == target) && counter[uniqNums[i]] >= 4 {
 			res = append(res, []int{uniqNums[i], uniqNums[i], uniqNums[i], uniqNums[i]})
 		}
 		for j := i + 1; j < len(uniqNums); j++ {
+			// 3 + 1 组合
 			if (uniqNums[i]*3+uniqNums[j] == target) && counter[uniqNums[i]] > 2 {
 				res = append(res, []int{uniqNums[i], uniqNums[i], uniqNums[i], uniqNums[j]})
 			}
 			if (uniqNums[j]*3+uniqNums[i] == target) && counter[uniqNums[j]] > 2 {
 				res = append(res, []int{uniqNums[i], uniqNums[j], uniqNums[j], uniqNums[j]})
 			}
+			// 2 + 2 组合
 			if (uniqNums[j]*2+uniqNums[i]*2 == target) && counter[uniqNums[j]] > 1 && counter[uniqNums[i]] > 1 {
 				res = append(res, []int{uniqNums[i], uniqNums[i], uniqNums[j], uniqNums[j]})
 			}
 			for k := j + 1; k < len(uniqNums); k++ {
+				// 2 + 1 + 1 组合
 				if (uniqNums[i]*2+uniqNums[j]+uniqNums[k] == target) && counter[uniqNums[i]] > 1 {
 					res = append(res, []int{uniqNums[i], uniqNums[i], uniqNums[j], uniqNums[k]})
 				}
@@ -147,7 +155,10 @@ func fourSum2(nums []int, target int) [][]int {
 				if (uniqNums[k]*2+uniqNums[i]+uniqNums[j] == target) && counter[uniqNums[k]] > 1 {
 					res = append(res, []int{uniqNums[i], uniqNums[j], uniqNums[k], uniqNums[k]})
 				}
+				// 1 + 1 + 1 + 1 组合
 				c := target - uniqNums[i] - uniqNums[j] - uniqNums[k]
+				// 因为 uniqNums 已排序 uniqNums[k+1] >= uniqNums[k]
+				// 同时 c < uniqNums[k] && counter[c] > 0 说明 c 是 前面的 uniqNums[i] 或 uniqNums[j]，就与前面的组合重复
 				if c > uniqNums[k] && counter[c] > 0 {
 					res = append(res, []int{uniqNums[i], uniqNums[j], uniqNums[k], c})
 				}
