@@ -18,7 +18,7 @@ type ans0344 struct {
     result []byte
 }
 
-func TestTwoSum(t *testing.T) {
+func TestReverseString(t *testing.T) {
 
     qs := []question0344{
         {
