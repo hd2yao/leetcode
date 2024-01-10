@@ -20,3 +20,11 @@
   + [代码随想录](https://www.programmercarl.com/0151.%E7%BF%BB%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%87%8C%E7%9A%84%E5%8D%95%E8%AF%8D.html#%E7%AE%97%E6%B3%95%E5%85%AC%E5%BC%80%E8%AF%BE)
   + [Leetcode](https://leetcode.cn/problems/reverse-words-in-a-string/)
   + [hd2yao](https://github.com/hd2yao/leetcode/tree/master/string/0151.Reverse-Words-in-a-String)
+
+### KMP 算法
+### 4. 找出字符串中第一个匹配项的下标
++ 0028
+  + 2024.1.10
+  + [代码随想录](https://www.programmercarl.com/0028.%E5%AE%9E%E7%8E%B0strStr.html#%E7%AE%97%E6%B3%95%E5%85%AC%E5%BC%80%E8%AF%BE)
+  + [Leetcode](https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/)
+  + [hd2yao](https://github.com/hd2yao/leetcode/tree/master/string/0028.Find-the-Index-of-the-First-Occurrence-in-a-String)
