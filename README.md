@@ -5,6 +5,9 @@
 2. [Leetcode_By_Go](https://github.com/halfrost/LeetCode-Go)
 
 ## 目录
+### [训练营](https://github.com/hd2yao/leetcode/tree/master/training)
++ Day1：704. 二分查找、27. 移除元素
+
 ### [数组](https://github.com/hd2yao/leetcode/tree/master/array)
 + 二分查找
 + 移除元素
