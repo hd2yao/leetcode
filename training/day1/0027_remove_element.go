@@ -16,14 +16,15 @@ func removeElementTwoPointers(nums []int, val int) int {
             rear--
             continue
         }
-        if nums[front] == val && nums[rear] != val {
+        // 由于上面的 if 条件，可以删去此处 '&& nums[rear] != val'
+        if nums[front] == val {
             nums[front], nums[rear] = nums[rear], nums[front]
             front++
             rear--
         }
     }
 
-    if nums[front] == 2 {
+    if nums[front] == val {
         return front
     } else {
         return front + 1
@@ -41,6 +42,20 @@ func removeElementFastAndSlowPointers(nums []int, val int) int {
             slow++
         } else {
             fast++
+        }
+    }
+
+    return slow
+}
+
+// 快慢指针-改进
+func removeElementFastAndSlowPointersOptimize(nums []int, val int) int {
+    slow := 0
+
+    for _, num := range nums {
+        if num != val {
+            nums[slow] = num
+            slow++
         }
     }
 

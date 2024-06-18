@@ -57,3 +57,69 @@ for left <= right {
 
 视频讲解：https://www.bilibili.com/video/BV12A4y1Z7LP
 
+#### 思路
+由于数组在内存中的地址是连续的，所以无法直接删除其中某一个元素，只能通过覆盖当前元素实现删除元素的操作
+
+题目要求 **原地** 修改， 因此想到使用 **双指针**，下面是两种使用双指针的方法
+
+##### 双指针法
+根据题目要求，返回的结果只看前 k 个不等于 val 的元素，因此想到将等于 val 的元素都移到数组的末尾
+
+- 创建两个指针 front, rear 分别指向数组的头和尾
+- 保留尾部等于 val 的元素，以及头部不等于 val 的元素
+```go
+if nums[front] != val {
+    front++
+}
+if nums[rear] == val {
+    rear--
+}
+```
+- 将头部等于 val 的元素与尾部不等于 val 的元素交换
+```go
+if nums[front] == val && nums[rear] != val {
+    nums[front], nums[rear] = nums[rear], nums[front]
+    front++
+    rear--
+}
+```
+- 由于指针都是向中间移动，因此循环结束的条件就是两个指针相遇
+- 此时，指针指向的元素需要进行判断
+```go
+if nums[front] == val {
+    return front
+} else {
+    return front + 1
+}
+```
+
+#### 快慢指针法
+快慢指针的关键是要理清两个指针的含义
+- fast: 获取新元素
+- slow: 构建新数组
+
+fast 在原数组中依次寻找，将符合条件的元素传给由 slow 构建的新数组中
+
+```go
+if nums[fast] != val {
+    nums[slow], nums[fast] = nums[fast], nums[slow]
+    fast++
+    slow++
+} else {
+    fast++
+}
+```
+
+#### 快慢指针法--改进
+- 首先，从上面的代码可以看出，fast 指针其实是用来遍历整个数组的，因此可直接 `for-range` 代替 fast指针
+- 其次，题目中有说 “nums 的其余元素和 nums 的大小并不重要“ ，因此可以省去上面代码交换值的操作，直接将等于 val 的值覆盖掉
+```go
+for _, num := range nums {
+    if num != val {
+        nums[slow] = num
+        slow++
+    }
+}
+```
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day1/0027_remove_element.go)
