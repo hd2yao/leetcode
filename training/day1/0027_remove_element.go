@@ -29,3 +29,20 @@ func removeElementTwoPointers(nums []int, val int) int {
         return front + 1
     }
 }
+
+// 快慢指针
+func removeElementFastAndSlowPointers(nums []int, val int) int {
+    slow, fast := 0, 0
+
+    for fast < len(nums) {
+        if nums[fast] != val {
+            nums[slow], nums[fast] = nums[fast], nums[slow]
+            fast++
+            slow++
+        } else {
+            fast++
+        }
+    }
+
+    return slow
+}
