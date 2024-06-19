@@ -42,3 +42,10 @@ for rear >= 0 {
 若是不使用 index 标记新数组并将平方值直接放入对应位置，只能是使用 append 结果是平方值降序排序，最后还需要对 result 做一个逆序的操作
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day2/0977_squares_of_a_sorted_array.go)
+
+### 209 长度最小的子数组
+题目链接：https://leetcode.cn/problems/minimum-size-subarray-sum/
+
+文章讲解：https://programmercarl.com/0209.%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.html
+
+视频讲解：https://www.bilibili.com/video/BV1tZ4y1q7XE
