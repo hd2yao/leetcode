@@ -129,3 +129,8 @@ left++
 文章讲解：https://programmercarl.com/0059.%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5II.html
 
 视频讲解：https://www.bilibili.com/video/BV1SL4y1N7mV/
+
+#### 思路
+手动画一画图，确定好边界，坚持**循环不变量原则**
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day2/0059_spiral_matrix_ii.go)
