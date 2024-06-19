@@ -7,6 +7,7 @@
 ## 目录
 ### [训练营](https://github.com/hd2yao/leetcode/tree/master/training)
 + Day1：704. 二分查找、27. 移除元素
++ Day2：数组 977 209 59
 
 ### [数组](https://github.com/hd2yao/leetcode/tree/master/array)
 + 二分查找
