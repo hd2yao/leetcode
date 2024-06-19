@@ -116,4 +116,9 @@ left++
 
 第一次找到目标子数组后，将长度计入 length 中，后续取目标子数组与 length 的最小值即可
 
+##### 滑动窗口-优化
+通过上面的方法我们可以看出来，滑动窗口实际上就是**终止位置**从数组下标为 0 开始，一直到下标为 `len(nums) - 1`停止，
+不会出现向前移动的情况，也不会出现跳过某一个元素的情况，因此，我们可以使用 `for-range` 来代替终止位置的指针
+>  `for-range` 同样可以代替起始位置
+
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day2/0209_minimum_size_subarray_sum.go)
