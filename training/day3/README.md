@@ -53,3 +53,12 @@ for head != nil && head.Val == val {
 使用虚拟头节点的好处就是，无需单独考虑头节点的情况，这里不在赘述
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day3/0203_remove_linked_list_elements.go)
+
+
+### 707 设计链表
+
+题目链接：https://leetcode.cn/problems/design-linked-list/description/
+
+文章讲解：https://programmercarl.com/0707.%E8%AE%BE%E8%AE%A1%E9%93%BE%E8%A1%A8.html
+
+视频讲解：https://www.bilibili.com/video/BV1FU4y1X7WD
