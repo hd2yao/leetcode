@@ -64,3 +64,12 @@ for head != nil && head.Val == val {
 视频讲解：https://www.bilibili.com/video/BV1FU4y1X7WD
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day3/707_design_linked_list.go)
+
+
+### 206 反转链表
+
+题目链接：https://leetcode.cn/problems/reverse-linked-list/
+
+文章讲解：https://programmercarl.com/0206.%E7%BF%BB%E8%BD%AC%E9%93%BE%E8%A1%A8.html
+
+视频讲解：https://www.bilibili.com/video/BV1nB4y1i7eL
