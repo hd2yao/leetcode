@@ -7,3 +7,7 @@
 #### Day2
 + 2024.06.19
 + [数组 977 209 59](https://github.com/hd2yao/leetcode/tree/master/training/day2)
+
+#### Day3
++ 2024.06.20
++ [链表 203 707 206](https://github.com/hd2yao/leetcode/tree/master/training/day3)
