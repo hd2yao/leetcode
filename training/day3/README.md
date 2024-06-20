@@ -62,3 +62,5 @@ for head != nil && head.Val == val {
 文章讲解：https://programmercarl.com/0707.%E8%AE%BE%E8%AE%A1%E9%93%BE%E8%A1%A8.html
 
 视频讲解：https://www.bilibili.com/video/BV1FU4y1X7WD
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day3/707_design_linked_list.go)
