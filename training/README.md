@@ -11,3 +11,7 @@
 #### Day3
 + 2024.06.20
 + [链表 203 707 206](https://github.com/hd2yao/leetcode/tree/master/training/day3)
+
+#### Day4
++ 2024.06.21
++ [链表 24 19 160 142](https://github.com/hd2yao/leetcode/tree/master/training/day4)

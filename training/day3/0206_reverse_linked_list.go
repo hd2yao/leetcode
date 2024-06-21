@@ -1,8 +1,10 @@
 package day3
 
+import "github.com/hd2yao/leetcode/training/structures"
+
 // 双指针法-迭代法
 func reverseList(head *ListNode) *ListNode {
-    var prev *ListNode
+    var prev *structures.ListNode
     rear := head
     for rear != nil {
         tmp := rear

@@ -1,5 +1,9 @@
 package day3
 
+import "github.com/hd2yao/leetcode/training/structures"
+
+type ListNode = structures.ListNode
+
 // 虚拟头节点
 func removeElementsDummy(head *ListNode, val int) *ListNode {
     dummyHead := &ListNode{Next: head}
