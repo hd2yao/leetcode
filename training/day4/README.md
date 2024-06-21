@@ -117,3 +117,11 @@ for tmpA != tmpB {
 而正确的代码，在指针指向 nil 后只会发生上述第一步的过程
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day4/0160_intersection_of_two_linked_list.go)
+
+### 142 环形链表II
+
+题目链接：https://leetcode.cn/problems/linked-list-cycle-ii/
+
+文章讲解：https://programmercarl.com/0142.%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8II.html
+
+视频讲解：https://www.bilibili.com/video/BV1if4y1d7ob
