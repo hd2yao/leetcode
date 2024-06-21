@@ -64,3 +64,12 @@ for head != nil && head.Next != nil {
 > - 不能使用 ||, 当链表为奇数个时, head 指向最后一个元素, head.Next == nil 但是 head != nil, 同样再次循环, 即 要同时满足奇数个和偶数个的条件, 因此需要使用 &&
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day4/0024_swap_nodes_in_pairs.go)
+
+
+### 19 删除链表的倒数第N个节点
+
+题目链接：https://leetcode.cn/problems/remove-nth-node-from-end-of-list/
+
+文章讲解：https://programmercarl.com/0019.%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%ACN%E4%B8%AA%E8%8A%82%E7%82%B9.html
+
+视频讲解：https://www.bilibili.com/video/BV1vW4y1U7Gf
