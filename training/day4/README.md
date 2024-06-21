@@ -85,3 +85,10 @@ for head != nil && head.Next != nil {
 而从虚拟头节点出发就不会有这种情况
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day4/0019_remove_nth_node_from_end_of_list.go)
+
+
+### 160 相交链表
+
+题目链接：https://leetcode.cn/problems/intersection-of-two-linked-lists/
+
+文章讲解：https://programmercarl.com/%E9%9D%A2%E8%AF%95%E9%A2%9802.07.%E9%93%BE%E8%A1%A8%E7%9B%B8%E4%BA%A4.html
