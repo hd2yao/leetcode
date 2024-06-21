@@ -73,3 +73,15 @@ for head != nil && head.Next != nil {
 文章讲解：https://programmercarl.com/0019.%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%ACN%E4%B8%AA%E8%8A%82%E7%82%B9.html
 
 视频讲解：https://www.bilibili.com/video/BV1vW4y1U7Gf
+
+#### 思路
+经典的使用快慢指针
+
+其实现在也可以总结出经验了，只要是返回头节点，一定是要使用虚拟头节点，或者说所有的链表题都可以先使用虚拟头节点
+
+这道题，我给出了两段代码，第一段快慢指针都是从 head 出发，这样就会出现当要删除头节点时，快指针会先移动到 nil，因此在循环条件上还有删除操作，
+都多出了一种考虑的情况
+
+而从虚拟头节点出发就不会有这种情况
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day4/0019_remove_nth_node_from_end_of_list.go)
