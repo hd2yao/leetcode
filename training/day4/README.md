@@ -92,3 +92,28 @@ for head != nil && head.Next != nil {
 题目链接：https://leetcode.cn/problems/intersection-of-two-linked-lists/
 
 文章讲解：https://programmercarl.com/%E9%9D%A2%E8%AF%95%E9%A2%9802.07.%E9%93%BE%E8%A1%A8%E7%9B%B8%E4%BA%A4.html
+
+#### 思路
+将两个链表拼接，然后使用两个指针去同步循环，直至指向同一个节点即为相交的节点；若是两个链表不想交，最终两个指针都会同时指向 nil
+
+这里先给出我第一次写的代码，只通过了部分实例
+```go
+for tmpA != tmpB {
+    if tmpA == nil {
+        tmpA = headB
+    }
+    if tmpB == nil {
+        tmpB = headA
+    }
+    tmpA = tmpA.Next
+    tmpB = tmpB.Next
+}
+```
+上面的代码跟正确的代码的区别就在于，把写在 else 里的内容都放在了外面，就这会导致在指针指向 nil 后还有以下两个步骤，
+
+- 第一步，将指针重新指向 headA 或是 headB
+- 第二部，向后移动一步
+
+而正确的代码，在指针指向 nil 后只会发生上述第一步的过程
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day4/0160_intersection_of_two_linked_list.go)
