@@ -1,8 +1,10 @@
 package day3
 
+import "github.com/hd2yao/leetcode/training/structures"
+
 // 虚拟头节点
-func removeElementsDummy(head *ListNode, val int) *ListNode {
-    dummyHead := &ListNode{Next: head}
+func removeElementsDummy(head *structures.ListNode, val int) *structures.ListNode {
+    dummyHead := &structures.ListNode{Next: head}
     head = dummyHead
     for head.Next != nil {
         if head.Next.Val == val {
@@ -15,7 +17,7 @@ func removeElementsDummy(head *ListNode, val int) *ListNode {
 }
 
 // 临时节点
-func removeElementsTmp(head *ListNode, val int) *ListNode {
+func removeElementsTmp(head *structures.ListNode, val int) *structures.ListNode {
     tmp := head
     for tmp != nil && tmp.Next != nil {
         if tmp.Next.Val == val {
