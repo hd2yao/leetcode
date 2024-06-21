@@ -125,3 +125,10 @@ for tmpA != tmpB {
 文章讲解：https://programmercarl.com/0142.%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8II.html
 
 视频讲解：https://www.bilibili.com/video/BV1if4y1d7ob
+
+#### 思路
+使用快慢指针
+
+要会自己推导出数学等式，是解决这道题的关键，具体过程可以上面的文章讲解，这里不再说明
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day4/0142_linked_list_cycle_ii.go)
