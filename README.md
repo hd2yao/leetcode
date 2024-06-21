@@ -9,6 +9,7 @@
 + Day1：704. 二分查找、27. 移除元素
 + Day2：数组 977 209 59
 + Day3：链表 203 707 206
++ Day4：链表 24 19 160 142
 
 ### [数组](https://github.com/hd2yao/leetcode/tree/master/array)
 + 二分查找
