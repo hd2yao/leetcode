@@ -3,7 +3,7 @@ package day3
 import "github.com/hd2yao/leetcode/training/structures"
 
 // 双指针法-迭代法
-func reverseList(head *structures.ListNode) *structures.ListNode {
+func reverseList(head *ListNode) *ListNode {
     var prev *structures.ListNode
     rear := head
     for rear != nil {
@@ -16,12 +16,12 @@ func reverseList(head *structures.ListNode) *structures.ListNode {
 }
 
 // 双指针法-递归法
-func reverseListRecursive(head *structures.ListNode) *structures.ListNode {
-    var prev *structures.ListNode
+func reverseListRecursive(head *ListNode) *ListNode {
+    var prev *ListNode
     return reverse(prev, head)
 }
 
-func reverse(prev, rear *structures.ListNode) *structures.ListNode {
+func reverse(prev, rear *ListNode) *ListNode {
     if rear == nil {
         return prev
     }
