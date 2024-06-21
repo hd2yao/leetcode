@@ -22,6 +22,7 @@ func swapPairsIteration(head *ListNode) *ListNode {
     return dummyHead.Next
 }
 
+// 双指针-递归法
 func swapPairs(head *ListNode) *ListNode {
     dummyHead := &ListNode{Next: head}
     front := dummyHead
