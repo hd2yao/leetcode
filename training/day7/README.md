@@ -34,3 +34,9 @@ s[i] - 'a'
 视频讲解：https://www.bilibili.com/video/BV1ba411S7wu
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day7/0349_intersection_of_two_arrays.go)
+
+### 202 快乐数
+
+题目链接：https://leetcode.cn/problems/happy-number/
+
+文章讲解：https://programmercarl.com/0202.%E5%BF%AB%E4%B9%90%E6%95%B0.html
