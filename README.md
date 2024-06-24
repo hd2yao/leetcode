@@ -10,6 +10,7 @@
 + Day2：数组 977 209 59
 + Day3：链表 203 707 206
 + Day4：链表 24 19 160 142
++ Day7：哈希表 242 349 202 1
 
 ### [数组](https://github.com/hd2yao/leetcode/tree/master/array)
 + 二分查找
