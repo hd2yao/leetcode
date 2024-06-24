@@ -15,11 +15,10 @@ func isHappy(n int) bool {
 
 func sum2(n int) int {
     sum := 0
-    for n/10 != 0 {
+    for n > 0 {
         tmp := n % 10
         n = n / 10
         sum += tmp * tmp
     }
-    sum += (n % 10) * (n % 10)
     return sum
 }
