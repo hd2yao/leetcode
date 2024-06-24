@@ -70,3 +70,10 @@ numMap := make(map[int]struct{}, 0)
 文章讲解：https://programmercarl.com/0001.%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C.html
 
 视频讲解：https://www.bilibili.com/video/BV1aT41177mK
+
+#### 思路
+使用 map 分别保存对应差值和下标
+
+梦之始，两数之和！
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day7/0001_two_sum.go)
