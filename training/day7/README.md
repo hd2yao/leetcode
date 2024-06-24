@@ -62,3 +62,11 @@ numMap := make(map[int]struct{}, 0)
 每次求和结果去集合中寻找是否已存在，若不存在，存入然后重复这个过程；若存在，说明开始重复，直接结束
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day7/0202_happy_number.go)
+
+### 1 两数之和
+
+题目链接：https://leetcode.cn/problems/two-sum/
+
+文章讲解：https://programmercarl.com/0001.%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C.html
+
+视频讲解：https://www.bilibili.com/video/BV1aT41177mK
