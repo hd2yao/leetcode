@@ -24,3 +24,12 @@ s[i] - 'a'
 可将字符对应到数组下标上
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day7/0242_vaild_anagram.go)
+
+### 349 两个数组的交集
+
+题目链接：https://leetcode.cn/problems/intersection-of-two-arrays/
+
+文章讲解：https://programmercarl.com/0349.%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86.html
+
+视频讲解：https://www.bilibili.com/video/BV1ba411S7wu
+
