@@ -33,3 +33,4 @@ s[i] - 'a'
 
 视频讲解：https://www.bilibili.com/video/BV1ba411S7wu
 
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day7/0349_intersection_of_two_arrays.go)
