@@ -40,3 +40,25 @@ s[i] - 'a'
 题目链接：https://leetcode.cn/problems/happy-number/
 
 文章讲解：https://programmercarl.com/0202.%E5%BF%AB%E4%B9%90%E6%95%B0.html
+
+#### 思路
+**当我们遇到了要快速判断一个元素是否出现集合里的时候，就要考虑哈希法了**
+
+题目中说会无限循环，这说明在求和的过程中会出现重复的过程，这里动手去算一算就可以知道了，也能够更加明白这个求和的过程，有助于理解代码
+
+因此，这道题的过程可以分为两个过程：
+
+- 求和
+- 判断结果是否重复
+  
+首先，求和代码的核心其实就是求余
+
+判断是否重复就要用到集合，go 中使用 map
+```go
+numMap := make(map[int]struct{}, 0)
+```
+> map 中 value 的类型都是可以的，只需要判断 key 是否存在即可，使用 struct{} 来构造集合是算法
+
+每次求和结果去集合中寻找是否已存在，若不存在，存入然后重复这个过程；若存在，说明开始重复，直接结束
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day7/0202_happy_number.go)
