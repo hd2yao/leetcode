@@ -80,3 +80,11 @@ for i := 0; i < len(nums1); i++ {
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day9/0015_3sum.go)
 
+
+### 18 四数之和
+
+题目链接：https://leetcode.cn/problems/4sum/
+
+文章讲解：https://programmercarl.com/0018.%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C.html
+
+视频讲解：https://www.bilibili.com/video/BV1DS4y147US
