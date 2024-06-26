@@ -19,3 +19,7 @@
 #### Day7
 + 2024.06.24
 + [哈希表 242 349 202 1](https://github.com/hd2yao/leetcode/tree/master/training/day7)
+
+#### Day9
++ 2024.06.26
++ [哈希表 454 383 15 18](https://github.com/hd2yao/leetcode/tree/master/training/day9)
