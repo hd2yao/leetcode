@@ -29,3 +29,11 @@ for i := 0; i < len(nums1); i++ {
 }
 ```
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day9/0454_4sum_ii.go)
+
+
+### 383 赎金信
+
+题目链接：https://leetcode.cn/problems/ransom-note/
+
+文章讲解：https://programmercarl.com/0383.%E8%B5%8E%E9%87%91%E4%BF%A1.html
+
