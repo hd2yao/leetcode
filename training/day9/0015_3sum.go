@@ -11,7 +11,7 @@ func threeSum(nums []int) [][]int {
         if nums[i] > 0 {
             break
         }
-        //
+        // i 去重
         if i > 0 && nums[i] == nums[i-1] {
             continue
         }
@@ -20,19 +20,28 @@ func threeSum(nums []int) [][]int {
         for left < right {
             if nums[i]+nums[left]+nums[right] == 0 {
                 result = append(result, []int{nums[i], nums[left], nums[right]})
-                // left 剪枝
+                // 下面不能省略
+                // left 去重
                 for left < right && nums[left] == nums[left+1] {
                     left++
                 }
-                // right 剪枝
+                // right 去重
                 for left < right && nums[right] == nums[right-1] {
                     right--
                 }
                 left++
                 right--
             } else if nums[i]+nums[left]+nums[right] > 0 {
+                // 剪枝可以省略
+                for left < right && nums[right] == nums[right-1] {
+                    right--
+                }
                 right--
             } else {
+                // 剪枝可以省略
+                for left < right && nums[left] == nums[left+1] {
+                    left++
+                }
                 left++
             }
         }
