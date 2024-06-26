@@ -41,3 +41,11 @@ for i := 0; i < len(nums1); i++ {
 这道题还是很简单的，跟之前 [0242-vaild-anagram](https://github.com/hd2yao/leetcode/tree/master/training/day7/0242_vaild_anagram.go) 差不多
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day9/0383_ransom_note.go)
+
+### 15 三数之和
+
+题目链接：https://leetcode.cn/problems/3sum/
+
+文章讲解：https://programmercarl.com/0454.%E5%9B%9B%E6%95%B0%E7%9B%B8%E5%8A%A0II.html
+
+视频讲解：https://www.bilibili.com/video/BV1GW4y127qo
