@@ -37,3 +37,7 @@ for i := 0; i < len(nums1); i++ {
 
 文章讲解：https://programmercarl.com/0383.%E8%B5%8E%E9%87%91%E4%BF%A1.html
 
+#### 思路
+这道题还是很简单的，跟之前 [0242-vaild-anagram](https://github.com/hd2yao/leetcode/tree/master/training/day7/0242_vaild_anagram.go) 差不多
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day9/0383_ransom_note.go)
