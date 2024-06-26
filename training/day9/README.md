@@ -88,3 +88,8 @@ for i := 0; i < len(nums1); i++ {
 文章讲解：https://programmercarl.com/0018.%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C.html
 
 视频讲解：https://www.bilibili.com/video/BV1DS4y147US
+
+#### 思路
+与三数之和的过程一致，无非是多了一层循环，这个过程一旦掌握，五数之和、六数之和 都是类似的
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day9/0018_4sum.go)
