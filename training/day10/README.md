@@ -22,3 +22,10 @@
 文章讲解：https://programmercarl.com/0541.%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2II.html
 
 视频讲解：https://www.bilibili.com/video/BV1dT411j7NN
+
+#### 思路
+这道题其实也是在模拟过程
+
+每 2k 个字符在循环，然后根据题意进行判断是哪种情况
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day10/0541_reverse_string_ii.go)
