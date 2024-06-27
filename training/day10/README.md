@@ -1,6 +1,6 @@
 ## day10
 
-## 代码随想录算法训练营第十天| 字符串 344 541 54 151 55
+## 代码随想录算法训练营第十天| 字符串 344 541 151
 
 ### 344 反转字符串
 
@@ -29,3 +29,12 @@
 每 2k 个字符在循环，然后根据题意进行判断是哪种情况
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day10/0541_reverse_string_ii.go)
+
+
+### 151 翻转字符串里的单词
+
+题目链接：https://leetcode.cn/problems/reverse-words-in-a-string/
+
+文章讲解：https://programmercarl.com/0151.%E7%BF%BB%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%87%8C%E7%9A%84%E5%8D%95%E8%AF%8D.html
+
+视频讲解：https://www.bilibili.com/video/BV1uT41177fX
