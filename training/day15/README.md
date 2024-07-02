@@ -32,3 +32,21 @@
 同样是使用栈来实现，也是很简单的一道题，就是在代码上有些需要注意的点
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day15/1047_remove_all_adjacent_duplicates_in_string.go)
+
+### 150 逆波兰表达式求值
+
+题目链接：https://leetcode.cn/problems/evaluate-reverse-polish-notation/
+
+文章讲解：https://programmercarl.com/0150.%E9%80%86%E6%B3%A2%E5%85%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%B1%82%E5%80%BC.html
+
+视频讲解：https://www.bilibili.com/video/BV1kd4y1o7on
+
+#### 思路
+这道题思想也很类似的，模拟一下这个求值的过程，哪怕不知道 逆波兰表达式 是什么，也应该知道这就是后缀表达式
+
+那么依旧是使用栈，
+
+- 数字直接入栈
+- 遇到运算符，就 pop 两个数字 进行运算，然后结果重新入栈
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day15/0150_evaluate_reverse_polish_notation.go)
