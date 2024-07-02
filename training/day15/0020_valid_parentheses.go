@@ -15,22 +15,27 @@ func isValid(s string) bool {
             continue
         }
         // 如果是右括号，需要依次匹配
+
+        // 首先判断栈中是否还有元素
+        // len(stack) == 0 是 ')(' 的情况
+        if len(stack) == 0 {
+            return false
+        }
         switch p {
         case ')':
-            // len(stack) == 0 是 ')(' 的情况
             // 因为括号匹配要以正确的顺序闭合，则栈顶元素一定是与之匹配的左括号
-            if len(stack) == 0 || stack[len(stack)-1] != '(' {
+            if stack[len(stack)-1] != '(' {
                 return false
             }
             // 匹配成功则出栈
             stack = stack[:len(stack)-1]
         case ']':
-            if len(stack) == 0 || stack[len(stack)-1] != '[' {
+            if stack[len(stack)-1] != '[' {
                 return false
             }
             stack = stack[:len(stack)-1]
         case '}':
-            if len(stack) == 0 || stack[len(stack)-1] != '{' {
+            if stack[len(stack)-1] != '{' {
                 return false
             }
             stack = stack[:len(stack)-1]
