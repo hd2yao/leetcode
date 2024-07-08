@@ -43,3 +43,7 @@
 #### Day17
 + 2024.07.04 2024.07.08
 + [栈与队列 239](https://github.com/hd2yao/leetcode/tree/master/training/day17)
+
+#### Day21
++ 2024.07.08
++ [栈与队列 347](https://github.com/hd2yao/leetcode/tree/master/training/day21)
