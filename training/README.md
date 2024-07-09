@@ -47,3 +47,7 @@
 #### Day21
 + 2024.07.08
 + [栈与队列 347](https://github.com/hd2yao/leetcode/tree/master/training/day21)
+
+#### Day22
++ 2024.07.09
++ [二叉树 144 145 94](https://github.com/hd2yao/leetcode/tree/master/training/day22)
