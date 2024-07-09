@@ -18,6 +18,7 @@
 + Day15：栈与队列 20 1047 150
 + Day17：栈与队列 239
 + Day21：栈与队列 347
++ Day22：二叉树 144 145 94
 
 ### [数组](https://github.com/hd2yao/leetcode/tree/master/array)
 + 二分查找
