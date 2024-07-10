@@ -73,9 +73,16 @@ for len(queue) > 0 {
 ```
 代码的逻辑跟上面是相同的，就是在 `result[level] = append(result[level], queue[0].Val)` 会下标越界，因此这里记录一下用于提醒自己
 
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day23/0102_binary_tree_level_order_traversal.go)
+
 ### 107 二叉树的层序遍历 II
 
 题目链接：https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/
+
+#### 思路
+跟上面一样，就是最后结果反转一下即可
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day23/0107_binary_tree_level_order_traversal_ii.go)
 
 ### 199 二叉树的右视图
 
