@@ -108,4 +108,14 @@ for len(queue) > 0 {
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day23/0429_n_ary_tree_level_order_traversal.go)
 
 ---
+下面五道题都可以用层序遍历来解决，这里不再详细说明
 
+[515.在每个树行中找最大值](https://leetcode.cn/problems/find-largest-value-in-each-tree-row/)
+
+[116.填充每个节点的下一个右侧节点指针](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/)
+
+[117.填充每个节点的下一个右侧节点指针II](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/)
+
+[104.二叉树的最大深度](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/)
+
+[111.二叉树的最小深度](https://leetcode.cn/problems/minimum-depth-of-binary-tree/description/)
