@@ -99,9 +99,13 @@ for len(queue) > 0 {
 
 题目链接：https://leetcode.cn/problems/average-of-levels-in-binary-tree/
 
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day23/0637_average_of_levels_in_binary_tree.go)
+
 ### 429 N 叉树的层序遍历
 
 题目链接：https://leetcode.cn/problems/n-ary-tree-level-order-traversal/
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day23/0429_n_ary_tree_level_order_traversal.go)
 
 ---
 
