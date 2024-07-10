@@ -88,6 +88,13 @@ for len(queue) > 0 {
 
 题目链接：https://leetcode.cn/problems/binary-tree-right-side-view/
 
+#### 思路
+我一开始写的时候，看着几个实例，就觉得每一层只放左或右孩子，但是问题重重
+
+后面看解析，最简单的方法是，直接记录每一层最后一个元素，因为从右看的每一个元素都是当前层最后一个元素
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day23/0199_binary_tree_right_side_view.go)
+
 ### 637 二叉树的层平均值
 
 题目链接：https://leetcode.cn/problems/average-of-levels-in-binary-tree/
