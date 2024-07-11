@@ -55,3 +55,7 @@
 #### Day23
 + 2024.07.10
 + [二叉树 102 107 199 637 429](https://github.com/hd2yao/leetcode/tree/master/training/day23)
+
+#### Day24
+- 2024.07.11
+- [二叉树 226 101](https://github.com/hd2yao/leetcode/tree/master/training/day24)
