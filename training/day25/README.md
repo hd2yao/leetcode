@@ -36,3 +36,13 @@
 因此，终止的条件就是，当前节点为叶子节点，即左右孩子节点都不存在
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day25/0111_minimum_depth_of_binary_tree.go)
+
+### 222 完全二叉树的节点个数
+
+题目链接：https://leetcode.cn/problems/count-complete-tree-nodes/
+
+文章讲解：https://programmercarl.com/0222.%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%8A%82%E7%82%B9%E4%B8%AA%E6%95%B0.html
+
+视频讲解：https://www.bilibili.com/video/BV1eW4y1B7pD
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day25/0222_count_complete_tree_nodes.go)
