@@ -59,3 +59,7 @@
 #### Day24
 - 2024.07.11
 - [二叉树 226 101](https://github.com/hd2yao/leetcode/tree/master/training/day24)
+
+#### Day25
+- 2024.07.12
+- [二叉树 104 111 222](https://github.com/hd2yao/leetcode/tree/master/training/day25)
