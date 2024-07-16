@@ -140,3 +140,16 @@ if treeNode.Right != nil {
 在遇到叶子节点时，只保存节点值，然后存入结果集，一次递归结束
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day29/0257_binary_tree_paths.go)
+
+### 404 左子叶之和
+
+题目链接：https://leetcode.cn/problems/sum-of-left-leaves/
+
+文章讲解：https://programmercarl.com/0404.%E5%B7%A6%E5%8F%B6%E5%AD%90%E4%B9%8B%E5%92%8C.html
+
+视频讲解：https://www.bilibili.com/video/BV1GY4y1K7z8
+
+#### 思路
+这道题没有太明白
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day29/0404_sum_of_left_leaves.go)
