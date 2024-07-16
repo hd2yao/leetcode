@@ -73,3 +73,11 @@ if lh == -1 || rh == -1 {
 ```
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day29/0110_balanced_binary_tree.go)
+
+### 257 二叉树的所有路径
+
+题目链接：https://leetcode.cn/problems/binary-tree-paths/
+
+文章讲解：https://programmercarl.com/0257.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%89%80%E6%9C%89%E8%B7%AF%E5%BE%84.html
+
+视频讲解：https://www.bilibili.com/video/BV1ZG411G7Dh
