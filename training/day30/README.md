@@ -20,3 +20,39 @@
 这里可以不保存全部的值，可以只记录每一层的第一个节点的值，这样可以减少内存使用
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day30/0513_find_bottom_left_tree_value.go)
+
+### 112 路径总和
+
+题目链接：https://leetcode.cn/problems/path-sum/
+
+文章讲解：https://programmercarl.com/0112.%E8%B7%AF%E5%BE%84%E6%80%BB%E5%92%8C.html
+
+视频讲解：https://www.bilibili.com/video/BV19t4y1L7CR
+
+#### 思路
+这道题跟二叉树的全部路径类似，都是需要从根节点开始到叶子节点，只是这道题只需要找到有一条符合条件的路径就可以返回
+
+因此，需要在左右子树中加入判断，这也是我一开始都没有想明白的地方
+```go
+if treeNode.Left != nil {
+    if pathSum(treeNode.Left, sum) {
+        return true
+    }
+}
+
+if treeNode.Right != nil {
+    if pathSum(treeNode.Right, sum) {
+        return true
+    }
+}
+```
+开始的时候我一直在想，不是已经在叶子节点处进行了判断嘛，为什么还需要在这里加一层判断，直到我手动模拟了一遍流程
+
+因为叶子节点处的判断只能针对当前叶子节点返回一个 bool 值，但是并不能直接返回到上一层节点
+
+因为每一递归都是一层判断，如果当前路径一共包含四个节点，我们需要在第一个节点（根节点）得到结果，也即在第一层判断，但是叶子节点处的判断是在第四层，
+索引需要对根据下层的结果得到上一层的结果
+
+所以，上面代码中的判断就是为了将结果一层一层返回到顶层
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day30/0112_path_sum.go)
