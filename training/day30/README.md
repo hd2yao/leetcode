@@ -56,3 +56,40 @@ if treeNode.Right != nil {
 所以，上面代码中的判断就是为了将结果一层一层返回到顶层
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day30/0112_path_sum.go)
+
+### 113 路径总和2
+
+题目链接：https://leetcode.cn/problems/path-sum-ii/
+
+文章讲解：https://programmercarl.com/0112.%E8%B7%AF%E5%BE%84%E6%80%BB%E5%92%8C.html
+
+视频讲解：https://www.bilibili.com/video/BV19t4y1L7CR
+
+#### 思路
+这道题也跟二叉树的全部路径类似，这道题也需要遍历全部的路径，只不过保存的直接是值，因此在代码层面有两点需要注意的：
+
+##### 1. 路径副本放入结果集
+当我们找到一条符合的路径后，需要放入结果集，注意不能直接 append，代码如下：
+```go
+*result = append(*result, *path)
+```
+*path 是节点的切片，是一个引用类型，如果像上面一样直接存入 result 中，后续对 *path 中值的修改都是直接影响到 result
+
+因此，我们需要先创建一个副本，将副本放入结果集中，
+```go
+pathCopy := make([]int, len(*path))
+copy(pathCopy, *path)
+*result = append(*result, pathCopy)
+```
+
+##### 2. 移除节点
+在每一轮递归结果后（到叶子节点为一轮），需要主动移除当前叶子节点（回溯）
+
+这是因为 path 是全局共享的，而不像一般参数传入调用后，自动回溯
+```go
+*path = (*path)[:len(*path)-1]
+```
+
+同时，在叶子节点中，不能像往常一样加 return，不然无法执行上面的代码
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day30/0112_path_sum_ii.go)
