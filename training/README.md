@@ -71,3 +71,7 @@
 #### Day29
 - 2024.07.16
 - [二叉树 110 257 404](https://github.com/hd2yao/leetcode/tree/master/training/day29)
+
+#### Day30
+- 2024.07.17
+- [二叉树 513 112 113](https://github.com/hd2yao/leetcode/tree/master/training/day30)
