@@ -104,3 +104,18 @@ if root2 == nil {
 最后返回根节点
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day31/0617_merge_two_binary_trees.go)
+
+### 700 二叉搜索树中的搜索
+
+题目链接：https://leetcode.cn/problems/search-in-a-binary-search-tree/
+
+文章讲解：https://programmercarl.com/0700.%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E6%90%9C%E7%B4%A2.html
+
+视频讲解：https://www.bilibili.com/video/BV1wG411g7sF
+
+#### 思路
+整体思路就类似于二分法，每一次比较可以排除左或右，知道遍历完或者找到
+
+首先可以直接写出迭代法，然后改造一下也可以很快写出递归法
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day31/0700_search_in_a_binary_search_tree.go)
