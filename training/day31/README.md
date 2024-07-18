@@ -119,3 +119,54 @@ if root2 == nil {
 首先可以直接写出迭代法，然后改造一下也可以很快写出递归法
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day31/0700_search_in_a_binary_search_tree.go)
+
+### 98 验证二叉搜索树
+
+题目链接：https://leetcode.cn/problems/validate-binary-search-tree/
+
+文章讲解：https://programmercarl.com/0098.%E9%AA%8C%E8%AF%81%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91.html
+
+视频讲解：https://www.bilibili.com/video/BV18P411n7Q4
+
+#### 思路
+我一开始的想法，就是递归，判断当前节点的左节点的值和右节点的值是否符合题意
+
+代码很快写出来，但是这只考虑了局部的范围，没有考虑整棵树，下面给出错误的代码：
+```go
+func isValidBST(root *TreeNode) bool {
+    if root.Left == nil && root.Right == nil {
+        return true
+    }
+
+    if root.Left != nil {
+        if root.Left.Val >= root.Val {
+            return false
+        }
+        if !isValidBST(root.Left) {
+            return false
+        }
+    }
+    if root.Right != nil {
+        if root.Right.Val <= root.Val {
+            return false
+        }
+        if !isValidBST(root.Right) {
+            return false
+        }
+    }
+    return true
+}
+```
+
+二叉搜索树：
+
+- 节点的左子树只包含小于当前节点的数
+- 节点的右子树只包含大于当前节点的数
+- 所有左子树和右子树自身必须也是二叉搜索树
+
+##### 使用中序遍历
+
+如果一棵树是二叉搜索树，那么中序遍历一定是单调递增的
+
+- 先递归得到中序遍历数组
+- 遍历数组判断是否单调递增
