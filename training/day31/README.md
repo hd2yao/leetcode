@@ -170,3 +170,11 @@ func isValidBST(root *TreeNode) bool {
 
 - 先递归得到中序遍历数组
 - 遍历数组判断是否单调递增
+
+##### 维护每个节点的范围
+
+每个节点：
+- 左子树的范围 (-∞, node.Val)
+- 右子树的范围 (node.Val, +∞)
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day31/0098_validate_binary_search_tree.go)
