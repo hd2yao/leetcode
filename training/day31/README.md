@@ -18,3 +18,9 @@
 具体的流程备注都在代码中了
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day31/0106_construct_binary_tree_from_inorder_and_postorder_traversal.go)
+
+### 105 从前序与中序遍历序列构造二叉树
+
+题目链接：https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day31/0105_construct_binary_tree_from_preorder_and_inorder_traversal.go)
