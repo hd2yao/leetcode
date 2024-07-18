@@ -75,3 +75,7 @@
 #### Day30
 - 2024.07.17
 - [二叉树 513 112 113](https://github.com/hd2yao/leetcode/tree/master/training/day30)
+
+#### Day31
+- 2024.07.18
+- [二叉树 105 106 654 617 700 98](https://github.com/hd2yao/leetcode/tree/master/training/day31)
