@@ -78,4 +78,9 @@ for i := 1; i < len(nums); i++ {
 
 代码中给出了我原始的统计，以及后续简化后的代码
 
+##### 2. 中序遍历直接在树上比较
+因为二叉搜索树的中序遍历时有序的，因此我们一样依次比较当前节点与前一个节点的值
+
+这个过程就和遍历有序数组时，依次比较相邻两个数值是相同的
+
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day32/0501_find_mode_in_binary_search_tree.go)

@@ -78,3 +78,35 @@ func modeCount(nums []int) []int {
 
     return modes
 }
+
+// 中序遍历过程中记录前一个节点直接比较
+
+func findMode2(root *TreeNode) []int {
+    mode := make([]int, 0)
+    maxCount := 1
+    count := 1
+    var prev *TreeNode
+    var travel func(node *TreeNode)
+    travel = func(node *TreeNode) {
+        if node == nil {
+            return
+        }
+        travel(node.Left)
+        if prev != nil && node.Val == prev.Val {
+            count++
+        } else {
+            count = 1
+        }
+        if count > maxCount {
+            mode = []int{node.Val}
+            maxCount = count
+        } else if count == maxCount {
+            mode = append(mode, node.Val)
+        }
+        prev = node
+        travel(node.Right)
+    }
+
+    travel(root)
+    return mode
+}
