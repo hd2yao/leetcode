@@ -15,4 +15,45 @@
 
 因为，求任意两个节点值的最小值，只需要一次比较数组中相邻两个值即可，因为数组是递增的，nums[2] - nums[0] 一定是大于 nums[1] - nums[0]
 
-[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day31/0530_minimum_absolute_difference_in_bst.go)
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day32/0530_minimum_absolute_difference_in_bst.go)
+
+### 501 二叉搜索树中的众数
+
+题目链接：https://leetcode.cn/problems/find-mode-in-binary-search-tree/
+
+文章讲解：https://programmercarl.com/0501.%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E4%BC%97%E6%95%B0.html
+
+视频讲解：https://www.bilibili.com/video/BV1fD4y117gp
+
+#### 思路
+
+##### 1. 中序遍历数组
+首先还是用中序遍历得到有序数组，下面就变成了统计一个有序数组中的全部众数
+
+下面是我在写代码中，遇到的一些问题点，记录一下：
+
+```go
+for i := 1; i < len(nums); i++ {
+    for (判断条件) {
+        // ...
+        i++
+    }
+}
+```
+
+在上面的代码中，内部的 i++ 执行后，外层的 i++ 是否还会触发执行？
+
+> 在 Go 语言中，for 循环中内层 for 循环结束后，跳回到外层 for 循环时，不会自动触发外层 for 循环的 i++ 操作。
+> 内层循环中的 i++ 操作已经修改了 i 的值，因此当内层循环结束并返回到外层循环时，外层循环的 i++ 操作会被跳过，
+> 不会再次执行。Go 语言不会重置或忽略 i 在循环体内的修改。
+
+> 在 Go 语言中，如果你在内层 for 循环中对 i 进行了 i++ 操作后又进行了 i-- 操作，
+那么当内层 for 循环结束并返回到外层 for 循环时，外层 for 循环仍会执行它的增量操作 i++。
+
+> 具体来说，内层循环中对 i 的任何修改都将在内层循环结束后反映在外层循环中。
+因此，如果你在内层循环中执行了 i++，然后又执行了 i--，那么 i 的值就恢复到内层循环之前的状态。
+当控制流返回到外层循环时，外层循环的增量操作 i++ 将正常执行。
+
+代码中给出了我原始的统计，以及后续简化后的代码
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day32/0501_find_mode_in_binary_search_tree.go)
