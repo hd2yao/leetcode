@@ -30,3 +30,24 @@ func inorder(treeNode *TreeNode, nums *[]int) {
     *nums = append(*nums, treeNode.Val)
     inorder(treeNode.Right, nums)
 }
+
+// 中序遍历过程中直接比较
+
+func getMinimumDifference2(root *TreeNode) int {
+    var prev *TreeNode
+    min := math.MaxInt
+    var travel func(node *TreeNode)
+    travel = func(node *TreeNode) {
+        if node == nil {
+            return
+        }
+        travel(node.Left)
+        if prev != nil && node.Val-prev.Val < min {
+            min = node.Val - prev.Val
+        }
+        prev = node
+        travel(node.Right)
+    }
+    travel(root)
+    return min
+}
