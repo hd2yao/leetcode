@@ -83,3 +83,7 @@
 #### Day32
 - 2024.07.19
 - [二叉树 530 501](https://github.com/hd2yao/leetcode/tree/master/training/day32)
+
+#### Day35
+- 2024.07.22
+- [二叉树 236 235 701 450](https://github.com/hd2yao/leetcode/tree/master/training/day35)
