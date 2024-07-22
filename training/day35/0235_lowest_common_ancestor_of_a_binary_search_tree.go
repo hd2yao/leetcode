@@ -41,3 +41,17 @@ func lowestCommonAncestorSearchTree2(root, p, q *TreeNode) *TreeNode {
     }
     return root
 }
+
+// 迭代法
+func lowestCommonAncestorSearchTree3(root, p, q *TreeNode) *TreeNode {
+    for root != nil {
+        if root.Val > q.Val && root.Val > p.Val {
+            root = root.Left
+        } else if root.Val < q.Val && root.Val < p.Val {
+            root = root.Right
+        } else {
+            return root
+        }
+    }
+    return nil
+}
