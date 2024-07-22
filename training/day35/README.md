@@ -75,3 +75,61 @@ return nil
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day35/0236_lowest_common_ancestor_of_a_binary_tree.go)
 
+### 235 二叉搜索树的最近公共祖先
+
+题目链接：https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/
+
+文章讲解：https://programmercarl.com/0235.%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88.html
+
+视频讲解：https://www.bilibili.com/video/BV1Zt4y1F7ww?share_source=copy_web
+
+#### 思路
+只要是二叉搜索树就一定要用到有序这一特性
+
+所以，这道题很明显就是要通过当前节点的值来判断 p、q 的位置
+
+- 节点值在 [p,q] 或 [q,p]，说明当前节点一定是最近的公共祖先
+- 节点值大于 p、q，说明两个节点都在左子树
+- 节点值小于 p、q，说明两个节点都在右子树
+
+因为我们每次递归时都需要判断，也就是搜索一条边的写法：
+```go
+if (递归函数(root.Left)) {return }
+if (递归函数(root.Right)) {return }
+```
+而且只需要判断值的大小，也就不涉及前中后序的遍历、
+
+```go
+if root == nil {
+    return root
+}
+
+// 找到节点
+if root == p || root == q {
+    return root
+}
+
+// 区间中
+if (root.Val < p.Val && root.Val > q.Val) || (root.Val < q.Val && root.Val > p.Val) {
+    return root
+}
+
+// p、q 在左子树
+if root.Val > q.Val && root.Val > p.Val {
+    leftTree := lowestCommonAncestorSearchTree(root.Left, p, q)
+    if leftTree != nil {
+        return leftTree
+    }
+}
+
+// p、q 在右子树
+if root.Val < q.Val && root.Val < p.Val {
+    rightTree := lowestCommonAncestorSearchTree(root.Right, p, q)
+    if rightTree != nil {
+        return rightTree
+    }
+}
+```
+上面是所以情况的代码
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day35/0235_lowest_common_ancestor_of_a_binary_search_tree.go)
