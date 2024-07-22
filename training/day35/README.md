@@ -133,3 +133,18 @@ if root.Val < q.Val && root.Val < p.Val {
 上面是所以情况的代码
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day35/0235_lowest_common_ancestor_of_a_binary_search_tree.go)
+
+### 701 二叉搜索树中的插入操作
+
+题目链接：https://leetcode.cn/problems/insert-into-a-binary-search-tree/
+
+文章讲解：https://programmercarl.com/0701.%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E6%8F%92%E5%85%A5%E6%93%8D%E4%BD%9C.html
+
+视频讲解：https://www.bilibili.com/video/BV1Et4y1c78Y?share_source=copy_web
+
+#### 思路
+直接使用二分法的思路，找到要插入的位置，新建节点放入对应的位置即可
+
+分别给出了递归法和迭代法
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day35/0701_insert_into_a_binary_search_tree.go)
