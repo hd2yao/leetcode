@@ -41,3 +41,11 @@
 其实，代码可以优化的，不用判断是否存在左右子树，而是直接加一个终止条件 当节点为空返回 nil，这样的写法可以简化代码
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day36/0669_trim_a_binary_search_tree.go)
+
+### 108 将有序数组转换为二叉搜索树
+
+题目链接：https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/
+
+文章讲解：https://programmercarl.com/0108.%E5%B0%86%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E8%BD%AC%E6%8D%A2%E4%B8%BA%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91.html
+
+视频讲解：https://www.bilibili.com/video/BV1uR4y1X7qL?share_source=copy_web
