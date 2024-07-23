@@ -28,6 +28,7 @@
 + Day31：二叉树 105 106 654 617 700 98
 + Day32：二叉树 530 501
 + Day35：二叉树 236 235 701 450
++ Day36：二叉树 669 108 538
 
 ### [数组](https://github.com/hd2yao/leetcode/tree/master/array)
 + 二分查找
