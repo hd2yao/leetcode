@@ -56,3 +56,18 @@
 知道上面的这个思路后，这道题就很好写出来了
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day36/0108_convert_sorted_array_to_binary_search_tree.go)
+
+### 538 把二叉搜索树转换为累加树
+
+题目链接：https://leetcode.cn/problems/convert-bst-to-greater-tree/
+
+文章讲解：https://programmercarl.com/0538.%E6%8A%8A%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E8%BD%AC%E6%8D%A2%E4%B8%BA%E7%B4%AF%E5%8A%A0%E6%A0%91.html
+
+视频讲解：https://www.bilibili.com/video/BV1d44y1f7wP?share_source=copy_web
+
+#### 思路
+这道题模拟一下过程就可以知道，顺序是右中左，是反序的中序遍历，这样一想就比较简单了
+
+定义一个全局的累加数，然后在递归过程中不断更新
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day36/0538_convert_bst_to_greater_tree.go)
