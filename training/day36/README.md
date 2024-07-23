@@ -49,3 +49,10 @@
 文章讲解：https://programmercarl.com/0108.%E5%B0%86%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E8%BD%AC%E6%8D%A2%E4%B8%BA%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91.html
 
 视频讲解：https://www.bilibili.com/video/BV1uR4y1X7qL?share_source=copy_web
+
+#### 思路
+这道题最关键点就是，使用二分的方式来构造平衡二叉树，也就是每次划分区间都是从数组的中间选取根节点
+
+知道上面的这个思路后，这道题就很好写出来了
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day36/0108_convert_sorted_array_to_binary_search_tree.go)
