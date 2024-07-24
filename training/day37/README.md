@@ -150,3 +150,13 @@ backtracking = func(k, sum, n, startIndex int) {
 这里要使用第二个条件剪枝的话，就需要使用上面优化后递归参数加入 sum 的方法，这种方法会在递归前先求和
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day37/0216_combination_sum_iii.go)
+
+### 17 电话号码的字母组合
+
+题目链接：https://leetcode.cn/problems/letter-combinations-of-a-phone-number/
+
+文章讲解：https://programmercarl.com/0017.%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%E7%9A%84%E5%AD%97%E6%AF%8D%E7%BB%84%E5%90%88.html
+
+视频讲解：https://www.bilibili.com/video/BV1yV4y1V7Ug
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day37/0017_letter_combinations_of_a_phone_number.go)
