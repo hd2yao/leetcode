@@ -45,3 +45,35 @@
 - 回溯搜索的遍历过程
 
 ---
+
+### 77 组合
+
+题目链接：https://leetcode.cn/problems/combinations/
+
+文章讲解：https://programmercarl.com/0077.%E7%BB%84%E5%90%88.html
+
+视频讲解：https://www.bilibili.com/video/BV1ti4y1L7cv
+
+#### 思路
+
+回溯算法就是在回溯函数中嵌套着 for 循环，for 循环又嵌套着回溯函数进行递归
+
+![回溯过程](day37-1.png)
+
+- for 循环代表着树的一层节点，依次进行遍历
+
+- 每一层递归就代表着树向下开辟新的一层
+
+- 终止条件就代表着已经到达树的最深一层，即到达叶子节点
+
+- 一层递归结束，就回溯到上一层节点，然后进行 for 遍历这一层的其他节点，然后也会有新的递归，即向下寻找到另一个叶子节点
+
+上面的回溯过程就是二叉树中深度优先搜索以前序遍历进行访问的过程
+
+- 我们寻找的每一个组合结果就是在寻找每一个叶子节点
+
+![回溯过程与二叉树遍历的关联](day37-2.png)
+
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day37/0077_combinations.go)
+
