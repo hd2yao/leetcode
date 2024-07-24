@@ -1,6 +1,6 @@
 ## day37
 
-## 代码随想录算法训练营第三十七天| 回溯法 77
+## 代码随想录算法训练营第三十七天| 回溯法 77 216 17
 
 ### 回溯法
 
@@ -104,3 +104,40 @@ for i := startIndex; i <= n - (k - len(path)) + 1; i++ {
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day37/0077_combinations.go)
 
+### 216 组合总和3
+
+题目链接：https://leetcode.cn/problems/combination-sum-iii/
+
+文章讲解：https://programmercarl.com/0216.%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8CIII.html
+
+视频讲解：https://www.bilibili.com/video/BV1wg411873x
+
+#### 思路
+
+##### 未剪枝
+
+和上面 组合 是类似的，只是在终止条件处多加了一个判断，计算一下当前组合的总和，满足总和值的才放入结果集中
+
+这里可以优化一下，将递归的函数多加一个参数，用来记录当前 path 中元素的总和，而无需每次计算一遍
+
+```go
+var backtracking func(k, sum, n, startIndex int)
+backtracking = func(k, sum, n, startIndex int) {
+    if len(path) == k {
+        if sum == n {
+            tmp := make([]int, k)
+            copy(tmp, path)
+            result = append(result, path)
+        }
+        return
+    }
+    
+    for i := startIndex; i <= 9; i++ {
+        path = append(path, i)
+        backtracking(k, sum+i, n, i+1)
+        path = path[:len(path)-1]
+    }
+}
+```
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day37/0216_combination_sum_iii.go)
