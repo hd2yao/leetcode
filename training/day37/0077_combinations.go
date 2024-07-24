@@ -15,7 +15,7 @@ func combine(n int, k int) [][]int {
         }
 
         // 从 start 开始，不往回走
-        for i := startIndex; i <= n; i++ {
+        for i := startIndex; i <= n-(k-len(path))+1; i++ {
             path = append(path, i)
             backtracking(n, k, i+1)
             path = path[:len(path)-1]
