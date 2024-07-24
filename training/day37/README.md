@@ -140,4 +140,13 @@ backtracking = func(k, sum, n, startIndex int) {
 }
 ```
 
+##### 剪枝
+
+这里可以剪枝的条件有两个：
+
+- 同组合，列表剩余元素 >= 组合所需元素
+- 组合总和已大于 n
+
+这里要使用第二个条件剪枝的话，就需要使用上面优化后递归参数加入 sum 的方法，这种方法会在递归前先求和
+
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day37/0216_combination_sum_iii.go)

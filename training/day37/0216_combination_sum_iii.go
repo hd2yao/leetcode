@@ -32,6 +32,8 @@ func combinationSum3(k int, n int) [][]int {
     return result
 }
 
+// 剪枝操作
+
 func combinationSum32(k int, n int) [][]int {
     result := make([][]int, 0)
     path := make([]int, 0)
@@ -47,7 +49,10 @@ func combinationSum32(k int, n int) [][]int {
             return
         }
 
-        for i := startIndex; i <= 9; i++ {
+        for i := startIndex; i <= 9-(k-len(path))+1; i++ {
+            if sum+i > n {
+                break
+            }
             path = append(path, i)
             backtracking(k, sum+i, n, i+1)
             path = path[:len(path)-1]
