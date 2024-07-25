@@ -68,4 +68,23 @@ if sum+candidates[i] > target {
 
 第一种剪枝只能 continue 是因为不确定下一个节点的值的大小
 
-[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day37/0077_combinations.go)
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day38/0039_combination_sum.go)
+
+### 40 组合总和2
+
+题目链接：https://leetcode.cn/problems/combination-sum-ii/
+
+文章讲解：https://programmercarl.com/0040.%E7%BB%84%E5%90%88%E6%80%BB%E5%92%8CII.html
+
+视频讲解：https://www.bilibili.com/video/BV12V4y1V73A
+
+#### 思路
+这道题又有了一些不同，数组里的数值有重复
+
+所以在处理去重的逻辑上跟 [三数之和](https://github.com/hd2yao/leetcode/tree/master/training/day9/0015_3sum.go) 是一致的
+
+所以我选用这种方法而没有使用讲解中的 used 数组
+
+> 代码中注释部分也是一种方法
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day38/0040_combination_sum_ii.go)
