@@ -47,4 +47,25 @@ if sum > target {
 backtracking(candidates[i:], sum+candidates[i], target)
 ```
 
+##### 剪枝
+上面的代码是在节点加入后再判断总和是否大于 target，那我们可以在节点加入前先进行判断
+
+也就是在 for 中判断，如果下一层的节点加入后 sum > target，可以直接结束当前值的操作
+
+```go
+if sum+candidates[i] > target {
+    continue
+}
+```
+
+我们还可以先对数组进行排序，从小到大，如果当前的 sum > target，那么可以直接不用判断下一层的全部节点
+
+```go
+if sum+candidates[i] > target {
+    break
+}
+```
+
+第一种剪枝只能 continue 是因为不确定下一个节点的值的大小
+
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day37/0077_combinations.go)
