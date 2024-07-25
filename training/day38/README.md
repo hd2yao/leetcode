@@ -88,3 +88,18 @@ if sum+candidates[i] > target {
 > 代码中注释部分也是一种方法
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day38/0040_combination_sum_ii.go)
+
+### 131 分割回文串
+
+题目链接：https://leetcode.cn/problems/palindrome-partitioning/
+
+文章讲解：https://programmercarl.com/0131.%E5%88%86%E5%89%B2%E5%9B%9E%E6%96%87%E4%B8%B2.html
+
+视频讲解：https://www.bilibili.com/video/BV1c54y1e7k6
+
+#### 思路
+谁能想到切割的问题也可以使用回溯法
+
+不过在知道这一点后，代码也就比较容易写出来了
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day38/0131_palindrome_partitioning.go)
