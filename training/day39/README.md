@@ -40,3 +40,18 @@
 而不是像之前组合问题，只有在递归终止时才记录
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day39/0078_subsets.go)
+
+### 90 子集2
+
+题目链接：https://leetcode.cn/problems/subsets-ii/
+
+文章讲解：https://programmercarl.com/0090.%E5%AD%90%E9%9B%86II.html
+
+视频讲解：https://www.bilibili.com/video/BV1vm4y1F71J/
+
+#### 思路
+
+从这道题跟前面做的 [组合总和2](https://github.com/hd2yao/leetcode/tree/master/training/day38/0040_combination_sum_ii.go) 
+以及 [三数之和](https://github.com/hd2yao/leetcode/tree/master/training/day9/0015_3sum.go) 在去重上是一致的
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day39/0090_subsets_ii.go)
