@@ -31,6 +31,7 @@
 + Day36：二叉树 669 108 538
 + Day37：回溯法 77 216 17
 + Day38：回溯法 39 40 131
++ Day39：回溯法 93 78 90
 
 ### [数组](https://github.com/hd2yao/leetcode/tree/master/array)
 + 二分查找
