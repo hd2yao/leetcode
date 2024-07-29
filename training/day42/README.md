@@ -55,3 +55,26 @@ if used[nums[i]] {
 第二个剪枝，每次都判断当前元素是否比上一层节点大即可
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day42/0491_non_decreasing_subsequences.go)
+
+### 46 全排列
+
+题目链接：https://leetcode.cn/problems/permutations/
+
+文章讲解：https://programmercarl.com/0046.%E5%85%A8%E6%8E%92%E5%88%97.html
+
+视频讲解：https://www.bilibili.com/video/BV19v4y1S79W/
+
+#### 思路
+这道题开始就是全排列问题，也就是需要考虑结果的顺序
+
+和前面组合的不同，就是前面选取过的元素在另一棵子树上还可以再选取一次
+
+也就是说，每一次可选取的元素不是看在数组中的位置，而是看是否已使用过
+
+[1,2,3] 在第一次开始时，是从 1 开始，那么下一步可选择的是 [2,3]
+
+当从 2 开始时，可选取的不只是 [3]，而是 [1,3] 
+
+因此，我们需要记录每次选取的数字，因为数组最大不超过六个数，可以使用 []int 或 []bool，来代替 map
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day42/0046_permutations.go)
