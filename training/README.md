@@ -103,3 +103,7 @@
 #### Day39
 - 2024.07.26
 - [回溯法 93 78 90](https://github.com/hd2yao/leetcode/tree/master/training/day39)
+
+#### Day42
+- 2024.07.29
+- [回溯法 491 46 47](https://github.com/hd2yao/leetcode/tree/master/training/day42)
