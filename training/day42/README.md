@@ -78,3 +78,24 @@ if used[nums[i]] {
 因此，我们需要记录每次选取的数字，因为数组最大不超过六个数，可以使用 []int 或 []bool，来代替 map
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day42/0046_permutations.go)
+
+### 47 全排列2
+
+题目链接：https://leetcode.cn/problems/permutations-ii/
+
+文章讲解：https://programmercarl.com/0047.%E5%85%A8%E6%8E%92%E5%88%97II.html
+
+视频讲解：https://www.bilibili.com/video/BV1R84y1i7Tm/
+
+#### 思路
+这道题的关键就在去重，
+
+`used[i - 1] == true`，说明同一树枝 `nums[i - 1]` 使用过
+
+`used[i - 1] == false`，说明同一树层 `nums[i - 1]` 使用过
+
+如果同一树层 `nums[i - 1]` 使用过则直接跳过
+
+![全排列去重](day42-1.png)
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day42/0047_permutations_ii.go)
