@@ -107,3 +107,7 @@
 #### Day42
 - 2024.07.29
 - [回溯法 491 46 47](https://github.com/hd2yao/leetcode/tree/master/training/day42)
+
+#### Day44
+- 2024.07.31
+- [回溯法 51 37](https://github.com/hd2yao/leetcode/tree/master/training/day42)
