@@ -33,6 +33,11 @@
 
 我是使用两个切片，分别记录某一行某一列是否存在皇后，然后以此来判断是否合法
 
+```go
+rowMark := make([]int, n)
+colMark := make([]int, n)
+```
+
 因为，我们是从上向下一行一行寻找，所以只需要考虑上一行的关系
 
 - 回溯的逻辑决定了，不可能在同一行，无需判断
@@ -45,6 +50,10 @@
 
 代码如下
 ```go
+if colMark[col] == 1 {
+	continue
+}
+
 if row != 0 && rowMark[row-1] == 1 && 
     (
         (col != 0 && col != n-1 && (colMark[col-1] == 1 || colMark[col+1] == 1)) || 
@@ -63,5 +72,11 @@ if row != 0 && rowMark[row-1] == 1 &&
 即 `rowMark[i] == 1 && colMark[i] == 1` 并不能保证是同一个元素，也可能分别对应两个元素
 
 因此，我们还是需要使用二维数组来去判断
+
+也不能只考虑与上一行的对角关系，
+
+![img.png](day44-2.png)
+
+所以还是要沿着左上和右上两条对角线去判断
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day44/0051_n_queens.go)
