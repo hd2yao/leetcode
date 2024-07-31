@@ -80,3 +80,21 @@ if row != 0 && rowMark[row-1] == 1 &&
 所以还是要沿着左上和右上两条对角线去判断
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day44/0051_n_queens.go)
+
+### 37 解数独
+
+题目链接：https://leetcode.cn/problems/sudoku-solver/
+
+文章讲解：https://programmercarl.com/0037.%E8%A7%A3%E6%95%B0%E7%8B%AC.html
+
+视频讲解：https://www.bilibili.com/video/BV1TW4y1471V/
+
+#### 思路
+
+我只能说这道题是真有难度，一层 for 还不够，要两层 for
+
+一层 for 用来填充行，一层 for 用来填充列
+
+更详细的讲解去看文章还有视频吧
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day44/0037_sudoku_solver.go)
