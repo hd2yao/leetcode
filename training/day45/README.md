@@ -22,3 +22,11 @@
 后面去看讲解，大概明白了，贪心法更多的是一种思想，正如代码中后面两种，将这种贪心的思想比较明确的展现了出来
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day45/0455_assign_cookies.go)
+
+### 376 摆动序列
+
+题目链接：https://leetcode.cn/problems/wiggle-subsequence/
+
+文章讲解：https://programmercarl.com/0376.%E6%91%86%E5%8A%A8%E5%BA%8F%E5%88%97.html
+
+视频讲解：https://www.bilibili.com/video/BV17M411b7NS
