@@ -13,8 +13,8 @@ func wiggleMaxLength(nums []int) int {
         curdiff = nums[i+1] - nums[i]
         if prediff <= 0 && curdiff > 0 || prediff >= 0 && curdiff < 0 {
             res++
+            prediff = curdiff
         }
-        prediff = curdiff
     }
 
     return res
