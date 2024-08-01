@@ -90,3 +90,11 @@ for i := 0; i < len(nums)-1; i++ {
 对于代码，只要将 prediff 的更新放在 if 中即可
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day45/0376_wiqqle_subsequence.go)
+
+### 53 最大子数组和
+
+题目链接：https://leetcode.cn/problems/maximum-subarray/
+
+文章讲解：https://programmercarl.com/0053.%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%92%8C.html
+
+视频讲解：https://www.bilibili.com/video/BV1aY4y1Z7ya
