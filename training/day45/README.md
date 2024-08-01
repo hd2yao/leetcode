@@ -98,3 +98,34 @@ for i := 0; i < len(nums)-1; i++ {
 文章讲解：https://programmercarl.com/0053.%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%92%8C.html
 
 视频讲解：https://www.bilibili.com/video/BV1aY4y1Z7ya
+
+#### 思路
+这道题妙的点在，一旦当前和小于 0，那么直接换下一个数开始，因为任何数加一个负数只会更小
+
+所以，我们遍历数组，计算总和，当 sum < 0，意味着如果后面还有数，再加只会更小，所以我们从下一个数开始重新计算
+
+在上面的过程中，我们要不断更新最大值
+
+```go
+func maxSubArray(nums []int) int {
+	sum := 0
+	max := nums[0]
+	for i := 0; i < len(nums); i++ {
+		sum += nums[i]
+		if sum < 0 {
+			sum = 0
+			continue
+		}
+        if max < sum {
+            max = sum
+        }
+	}
+	return max
+}
+```
+
+看着已经没有什么问题了，但是 [-2,-1] 运行后结果是 -2，而不是 -1
+
+所以我们应该先比较保存一个最大值，然后再判断是否要重新选择起点
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day45/0053_maximum_subarray.go)
