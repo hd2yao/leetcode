@@ -101,3 +101,11 @@ func canJump(nums []int) bool {
 我们可以改进一下，每次的移动范围都在最大的跳跃覆盖范围内，这样就不需要判断啦
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day46/0055_jump_game.go)
+
+### 45 跳跃游戏II
+
+题目链接：https://leetcode.cn/problems/jump-game-ii/
+
+文章讲解：https://programmercarl.com/0045.%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8FII.html
+
+视频讲解：https://www.bilibili.com/video/BV1Y24y1r7XZ
