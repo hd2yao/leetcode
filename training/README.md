@@ -115,3 +115,7 @@
 #### Day45
 - 2024.08.01
 - [贪心法 455 376 53](https://github.com/hd2yao/leetcode/tree/master/training/day45)
+
+#### Day46
+- 2024.08.02
+- [贪心法 122 55 45](https://github.com/hd2yao/leetcode/tree/master/training/day46)
