@@ -45,3 +45,11 @@
 例如上图 -6，就是第一天买入第二天卖出；像 4 和 5 可以放在一起，就是第二天买入第四天卖出
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day46/0122_best_time_to_buy_and_sell_stock_ii.go)
+
+### 55 跳跃游戏
+
+题目链接：https://leetcode.cn/problems/jump-game/
+
+文章讲解：https://programmercarl.com/0055.%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8F.html
+
+视频讲解：https://www.bilibili.com/video/BV1VG4y1X7kB
