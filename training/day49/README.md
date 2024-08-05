@@ -41,3 +41,23 @@
 局部最优：当前累加 rest[i] 的和 curSum 一旦小于 0，起始位置至少要是 i+1，因为从 i 之前开始一定不行
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day49/0134_gas_station.go)
+
+### 135 分发糖果
+
+题目链接：https://leetcode.cn/problems/candy/
+
+文章讲解：https://programmercarl.com/0135.%E5%88%86%E5%8F%91%E7%B3%96%E6%9E%9C.html
+
+视频讲解：https://www.bilibili.com/video/BV1ev4y1r7wN
+
+#### 思路
+开始觉得好简单，手动模拟了一下也没觉得难，开始写代码的时候发现，后面的孩子会影响前面的孩子，一下子就无从下手了
+
+这道题一定是要确定一边之后，再确定另一边：
+
+- 先确定右边评分大于左边（从前向后遍历）
+- 再确定左边评分大于右边（从后向前遍历）
+
+这样代码一下子变得超级简单
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day49/0135_candy.go)
