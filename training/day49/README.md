@@ -10,3 +10,12 @@
 
 视频讲解：https://www.bilibili.com/video/BV138411G7LY
 
+#### 思路
+这道题挺简单的，要不是因为划分在贪心法这一部分，真的都不知道用到了贪心法
+
+其实还是用到了两种贪心：
+
+- 将绝对值大的负数变为正数
+- 如果都是正数，就将值小的正数变为负数
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day49/1005_maximize_sum_of_array_after_k_negations.go)
