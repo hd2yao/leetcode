@@ -36,6 +36,7 @@
 + Day44：回溯法 51 37
 + Day45：贪心法 455 376 53
 + Day46：贪心法 122 55 45
++ Day49：贪心法 1005 134 135
 
 ### [数组](https://github.com/hd2yao/leetcode/tree/master/array)
 + 二分查找

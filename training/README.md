@@ -119,3 +119,7 @@
 #### Day46
 - 2024.08.02
 - [贪心法 122 55 45](https://github.com/hd2yao/leetcode/tree/master/training/day46)
+
+#### Day49
+- 2024.08.05
+- [贪心法 1005 134 135](https://github.com/hd2yao/leetcode/tree/master/training/day49)
