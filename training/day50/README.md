@@ -53,3 +53,16 @@ for i, person := range people {
 ```
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day50/0406_queue_reconstruction_by_height.go)
+
+### 452 用最少数量的箭引爆气球
+
+题目链接：https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons/
+
+文章讲解：https://programmercarl.com/0452.%E7%94%A8%E6%9C%80%E5%B0%91%E6%95%B0%E9%87%8F%E7%9A%84%E7%AE%AD%E5%BC%95%E7%88%86%E6%B0%94%E7%90%83.html
+
+视频讲解：https://www.bilibili.com/video/BV1SA41167xe
+
+#### 思路
+今天的题目都有一个共同点，想法很容易，但是代码很难写
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day50/0452_minimum_number_of_arrows_to_burst_balloons.go)
