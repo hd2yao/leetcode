@@ -16,3 +16,22 @@
 弓箭的数量就相当于是非交叉区间的数量，那只要用总区间数减去弓箭数量就是要移除的区间数量了
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day51/0435_non_overlapping_intervals.go)
+
+### 763 划分字母区间
+
+题目链接：https://leetcode.cn/problems/partition-labels/
+
+文章讲解：https://programmercarl.com/0763.%E5%88%92%E5%88%86%E5%AD%97%E6%AF%8D%E5%8C%BA%E9%97%B4.html
+
+视频讲解：https://www.bilibili.com/video/BV18G4y1K7d5
+
+#### 思路
+在理解了题意之后，这道题很容易就能做一个转化：
+
+因为每个字母只有出现在一个区间里，所以这个区间里至少要从这个字母出现的第一次开始到最后一次为止
+
+因此，我们需要统计每个字母第一次出现的位置和最后一次出现的位置，即每个字母的区间
+
+这样，这道题就变成了，对区间先进行合并，然后再统计有多少个非重叠区间
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day51/0763_partition_labels.go)
