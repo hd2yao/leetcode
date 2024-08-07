@@ -42,3 +42,16 @@
 ![img.png](day51-1.png)
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day51/0763_partition_labels.go)
+
+### 56 合并区间
+
+题目链接：https://leetcode.cn/problems/merge-intervals/
+
+文章讲解：https://programmercarl.com/0056.%E5%90%88%E5%B9%B6%E5%8C%BA%E9%97%B4.html
+
+视频讲解：https://www.bilibili.com/video/BV1wx4y157nD
+
+#### 思路
+不用说更多，这两天做的很多了，合并区间和找重叠区间是类似的
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day51/0056_merge_intervals.go)
