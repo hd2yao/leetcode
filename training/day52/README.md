@@ -19,3 +19,11 @@
 - 将字符串转为 byte 数组，方便修改
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day51/0738_monotone_increasing_digits.go)
+
+### 968 监控二叉树
+
+题目链接：https://leetcode.cn/problems/binary-tree-cameras/
+
+文章讲解：https://programmercarl.com/0968.%E7%9B%91%E6%8E%A7%E4%BA%8C%E5%8F%89%E6%A0%91.html
+
+视频讲解：https://www.bilibili.com/video/BV1SA411U75i
