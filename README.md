@@ -39,6 +39,7 @@
 + Day49：贪心法 1005 134 135
 + Day50：贪心法 860 406 452
 + Day51：贪心法 435 763 56
++ Day52：贪心法 738 968
 
 ### [数组](https://github.com/hd2yao/leetcode/tree/master/array)
 + 二分查找
