@@ -135,3 +135,7 @@
 #### Day52
 - 2024.08.08
 - [贪心法 738 968](https://github.com/hd2yao/leetcode/tree/master/training/day52)
+
+#### Day53
+- 2024.08.09
+- [动态规划 509 70 746](https://github.com/hd2yao/leetcode/tree/master/training/day53)
