@@ -42,4 +42,12 @@
 
 则 `dp[0][j] = 1` `dp[i][0] = 1`
 
-[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day56/0062.go)
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day56/0062_unique_paths.go)
+
+### 63 不同路径2
+
+题目链接：https://leetcode.cn/problems/unique-paths-ii/
+
+文章讲解：https://programmercarl.com/0063.%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84II.html
+
+视频讲解：https://www.bilibili.com/video/BV1Ld4y1k7c6/
