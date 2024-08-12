@@ -51,3 +51,24 @@
 文章讲解：https://programmercarl.com/0063.%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84II.html
 
 视频讲解：https://www.bilibili.com/video/BV1Ld4y1k7c6/
+
+#### 思路
+这道题跟上面一样，就是多了障碍物的一些判断，
+
+当遇到障碍物，`dp[i][j] = 0` 结合 dp 数组的含义，因为当前位置有障碍物，所以无法到达该位置，所以值为 0
+
+这里想说明一下，可以先对第 0 行和第 0 列做赋值操作，这样可以用上剪枝
+
+即，当在第 0 行或第 0 列中遇到障碍物，后面的位置也无需判断，因为一定到达不了
+
+```go
+// 初始化, 如果是障碍物, 后面的就都是0, 不用循环了
+for i := 0; i < m && obstacleGrid[i][0] == 0; i++ {
+    dp[i][0] = 1
+}
+for i := 0; i < n && obstacleGrid[0][i] == 0; i++ {
+    dp[0][i] = 1
+}
+```
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day56/0063_unique_paths_ii.go)
