@@ -41,6 +41,7 @@
 + Day51：贪心法 435 763 56
 + Day52：贪心法 738 968
 + Day53：动态规划 509 70 746
++ Day56：动态规划 62 63
 
 ### [数组](https://github.com/hd2yao/leetcode/tree/master/array)
 + 二分查找

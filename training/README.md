@@ -139,3 +139,7 @@
 #### Day53
 - 2024.08.09
 - [动态规划 509 70 746](https://github.com/hd2yao/leetcode/tree/master/training/day53)
+
+#### Day56
+- 2024.08.12
+- [动态规划 62 63](https://github.com/hd2yao/leetcode/tree/master/training/day56)
