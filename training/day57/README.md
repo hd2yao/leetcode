@@ -81,3 +81,5 @@ dp[2] = 1 是显而易见的
 这样我们就能够得到一个推导公式
 
 `dp[i] += dp[j - 1] * dp[i - j]` j-1 为 j 为根结点左子树节点数量，i-j 为以 j 为根结点右子树节点数量
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day57/0096_unique_binary_search_trees.go)
