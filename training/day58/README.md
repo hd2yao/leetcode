@@ -86,3 +86,39 @@
 背包容量为 0 时，总和一定都是 0
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day58/01_bag.go)
+
+### 416 分割等和子集
+
+题目链接：https://leetcode.cn/problems/partition-equal-subset-sum/
+
+文章讲解：https://programmercarl.com/0416.%E5%88%86%E5%89%B2%E7%AD%89%E5%92%8C%E5%AD%90%E9%9B%86.html
+
+视频讲解：https://www.bilibili.com/video/BV1rt4y1N7jE/
+
+#### 思路
+哪怕是知道这道题是要使用 01背包问题的方式来解决，结果想了半天都没想通到底怎么套上来
+
+下面来总结一下，
+
+- 背包的体积为sum / 2
+- 背包要放入的商品（集合里的元素）重量为 元素的数值，价值也为元素的数值
+- 背包如果正好装满，说明找到了总和为 sum / 2 的子集。
+- 背包中每一个元素是不可重复放入。
+
+##### 1. 确定 dp 数组以及下标的含义
+
+套到本题来看，
+
+`dp[j]`：容量为 j 的背包中，价值总和的最大值为 `dp[j]`
+
+当 `dp[target] == target`，背包就装满了，target 为背包的容量
+
+##### 2. 确定递推公式
+
+`dp[j] = max(dp[j], dp[j - nums[i]] + nums[i])`
+
+##### 3. dp 数组初始化
+
+如题意可得，dp[0] = 0
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day58/0416_partition_equal_subset_sum.go.go)
