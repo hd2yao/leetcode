@@ -34,3 +34,17 @@ func max(a, b int) int {
     }
     return a
 }
+
+// 0-1 背包：一维 dp
+
+func bagOneDimensional(weight, value []int, bagWeight int) int {
+    dp := make([]int, bagWeight+1)
+
+    for i := 0; i < len(weight); i++ {
+        for j := bagWeight; j >= weight[i]; j-- {
+            dp[j] = max(dp[j], dp[j-weight[i]]+value[i])
+        }
+    }
+
+    return dp[bagWeight]
+}
