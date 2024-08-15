@@ -121,4 +121,4 @@
 
 如题意可得，dp[0] = 0
 
-[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day58/0416_partition_equal_subset_sum.go.go)
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day58/0416_partition_equal_subset_sum.go)
