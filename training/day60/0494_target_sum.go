@@ -1,4 +1,4 @@
-package day59
+package day60
 
 // 二维 dp
 func findTargetSumWays(nums []int, target int) int {
