@@ -44,6 +44,8 @@
 + Day56：动态规划 62 63
 + Day57：动态规划 343 96
 + Day58：动态规划 背包01 416
++ Day59：动态规划 1049
++ Day60：动态规划 494 474
 
 ### [数组](https://github.com/hd2yao/leetcode/tree/master/array)
 + 二分查找
