@@ -117,3 +117,24 @@ for i := 1; i <= len(nums); i++ {
 `dp[j] = dp[j] + dp[j-nums[i]]` 也就是 `dp[j] += dp[j-nums[i]]`
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day60/0494_target_sum.go)
+
+### 474 一和零
+
+题目链接：https://leetcode.cn/problems/ones-and-zeroes/
+
+文章讲解：https://programmercarl.com/0474.%E4%B8%80%E5%92%8C%E9%9B%B6.html
+
+视频讲解：https://www.bilibili.com/video/BV1rW4y1x7ZQ/
+
+#### 思路
+这道题其实是一个三维的 dp，因为 weight 在本题中是两个维度 m 和 n
+
+那么降维一下就是 `dp[i][j]`: 最多有 i 个 0 和 j 个 1 的 strs 的最大子集的大小为 `dp[i][j]`
+
+把这个当成一维去做，只要想明白这一点就很简单了
+
+> 如果是三维的话，第一层就是 strs[i] 了，每一层都是一张 m * n 的表
+> 
+> `dp[i][j][k] = max(dp[i-1][j][k], dp[i-1][j-zero][k-one]+1)`
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day60/0474_ones_and_zeroes.go)
