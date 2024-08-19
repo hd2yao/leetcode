@@ -172,3 +172,5 @@ dp[1][0] = dp[0][0]
 然后还有一处需要提醒的是，递推公式中 `dp[i][j] = dp[i-1][j] +  dp[len(nums)][j-nums[i-1]]`
 
 `dp[len(nums)]` 的含义就是在不同背包容量下所以物品的方法总数
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day63/0377_combination_sum_iv.go)

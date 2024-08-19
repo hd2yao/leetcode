@@ -19,3 +19,18 @@ func combinationSum4(nums []int, target int) int {
     }
     return dp[len(nums)][target]
 }
+
+// 一维 dp
+func combinationSum4OneDimension(nums []int, target int) int {
+    dp := make([]int, target+1)
+    dp[0] = 1
+
+    for j := 0; j <= target; j++ {
+        for i := 0; i < len(nums); i++ {
+            if j >= nums[i-1] {
+                dp[j] += dp[j-nums[i-1]]
+            }
+        }
+    }
+    return dp[target]
+}
