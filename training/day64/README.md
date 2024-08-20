@@ -41,4 +41,10 @@
 
 最后在初始化中需要注意的是，如果不使用任何硬币，所有非 0 金额都无法凑成，因此 `dp[0][j] = \infty`（用某个大数表示）
 
+##### 一维 dp
+
+同理可直接推导出一维 dp
+
+`dp[j] = min(dp[j], dp[j-coins[i]]+1)`
+
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day64/0322_coin_change.go)
