@@ -48,3 +48,27 @@
 `dp[j] = min(dp[j], dp[j-coins[i]]+1)`
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day64/0322_coin_change.go)
+
+### 279 完全平方数
+
+题目链接：https://leetcode.cn/problems/perfect-squares/
+
+文章讲解：https://programmercarl.com/0279.%E5%AE%8C%E5%85%A8%E5%B9%B3%E6%96%B9%E6%95%B0.html
+
+视频讲解：https://www.bilibili.com/video/BV12P411T7Br/
+
+#### 思路
+
+本题需要先转化一下，
+
+我们根据题意：将 n 拆分成若干个数之和，而这些数其实就是从一个 nums = [1,4,9,16,25,...,10000] 中任取
+
+这样一来这道题就变成了完全背包问题啦
+
+与之前的题目都是一样的
+
+二维：`dp[i][j] = min(dp[i][j], dp[i][j-i*i]+1)`
+
+一维：`dp[j] = min(dp[j], dp[j-i*i]+1)`
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day64/0279_perfect_squares.go)
