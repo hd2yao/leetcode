@@ -14,3 +14,22 @@
 这道理很简单，不再过多讲解了
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day66/0198_house_robber.go)
+
+### 213 打家劫舍 II
+
+题目链接：https://leetcode.cn/problems/house-robber-ii/
+
+文章讲解：https://programmercarl.com/0213.%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8DII.html
+
+视频讲解：https://www.bilibili.com/video/BV1oM411B7xq
+
+#### 思路
+
+这里可以分情况讨论，
+
+- 考虑包含头元素，不包含尾元素
+- 考虑包含尾元素，不包含头元素
+
+这样就将环形结构转换成了两个线性结构，就回到了上面一题
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day66/0213_house_robber_ii.go)
