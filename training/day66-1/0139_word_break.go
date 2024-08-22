@@ -1,4 +1,4 @@
-package day66
+package day66_1
 
 // 二维 dp
 func wordBreak(s string, wordDict []string) bool {

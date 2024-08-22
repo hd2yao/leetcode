@@ -1,6 +1,6 @@
-## day66
+## day66-1
 
-## 代码随想录算法训练营第六十六天| 动态规划 139
+## 代码随想录算法训练营第六十六天（补）| 动态规划 139
 
 ### 139 单词拆分
 
@@ -37,4 +37,4 @@
 
 `dp[j]` : 字符串长度为 j 的话，`dp[j]` 为 true，表示可以拆分为一个或多个在字典中出现的单词
 
-[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day66/0139_word_break.go)
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day66-1/0139_word_break.go)

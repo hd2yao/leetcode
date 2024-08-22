@@ -167,3 +167,7 @@
 #### Day64
 - 2024.08.20
 - [动态规划 70 322 279](https://github.com/hd2yao/leetcode/tree/master/training/day64)
+
+#### Day66-1
+- 2024.08.22（昨天出外勤，补昨天的题目）
+- [动态规划 139](https://github.com/hd2yao/leetcode/tree/master/training/day66-1)
