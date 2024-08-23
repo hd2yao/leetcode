@@ -44,3 +44,19 @@
 `dp[1] = max(dp[1], dp[0]+prices[i])`
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day67/0121_best_time_to_buy_and_sell_stock.go)
+
+### 122 买卖股票的最佳时机 II
+
+题目链接：https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/
+
+文章讲解：https://programmercarl.com/0122.%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BAII%EF%BC%88%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%EF%BC%89.html
+
+视频讲解：https://www.bilibili.com/video/BV1D24y1Q7Ls
+
+#### 思路
+
+整体跟上面一起是一样的，就是需要注意的是，本题中股票可以多次买卖
+
+即，未持有不代表没有买入，也可能是买入后又卖出了
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day67/0122_best_time_to_buy_and_sell_stock_ii.go)
