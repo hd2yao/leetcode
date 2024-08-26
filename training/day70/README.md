@@ -92,3 +92,19 @@ func maxProfit(prices []int) int {
 我们可以理解为，在第 0 天买入又卖出，然后再次买入
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day70/0123_best_time_to_buy_and_sell_stock_iii.go)
+
+### 188 买卖股票的最佳时机4
+
+题目链接：https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/
+
+文章讲解：https://programmercarl.com/0188.%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BAIV.html
+
+视频讲解：https://www.bilibili.com/video/BV16M411U7XJ
+
+#### 思路
+
+本题在上一题的基础上，增加状态 j 即可，
+
+当 j 为奇数是就是买入，j 为偶数是就是卖出
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day70/0188_best_time_to_buy_and_sell_stock_iv.go)
