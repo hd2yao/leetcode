@@ -1,34 +1,25 @@
 package day70
 
-import "sort"
-
 func maxProfit(prices []int) int {
-	if len(prices) == 1 {
-		return 0
-	}
+    dp := make([][5]int, len(prices))
+    dp[0][1] = -prices[0]
+    dp[0][2] = 0
+    dp[0][3] = -prices[0]
+    dp[0][4] = 0
 
-	profit := make([]int, 0)
-	for i := 1; i < len(prices); i++ {
-		profit = append(profit, prices[i]-prices[i-1])
-	}
+    for i := 1; i < len(prices); i++ {
+        dp[i][1] = max(dp[i-1][1], -prices[i])
+        dp[i][2] = max(dp[i-1][2], dp[i-1][1]+prices[i])
+        dp[i][3] = max(dp[i-1][3], dp[i-1][2]-prices[i])
+        dp[i][4] = max(dp[i-1][4], dp[i-1][3]+prices[i])
+    }
 
-	result := make([]int, 0)
-	index := -1
-	for i := 0; i < len(profit); i++ {
-		if profit[i] < 0 {
-			result = append(result, 0)
-			index++
-		} else if i == 0 {
-			result = append(result, profit[i])
-			index++
-		} else {
-			result[index] += profit[i]
-		}
-	}
-	sort.Ints(result)
+    return dp[len(dp)-1][4]
+}
 
-	if len(result) == 1 {
-		return result[0]
-	}
-	return result[len(result)-1] + result[len(result)-2]
+func max(a, b int) int {
+    if a < b {
+        return b
+    }
+    return a
 }

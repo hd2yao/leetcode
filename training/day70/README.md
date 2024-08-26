@@ -75,4 +75,20 @@ func maxProfit(prices []int) int {
 }
 ```
 
+##### 动态规划
+
+每一天都有四种状态：
+1. 第一次持有股票
+2. 第一次不持有股票 
+3. 第二次持有股票 
+4. 第二次不持有股票
+
+那么，`dp[i][j]`：表示在第 i 天在状态 j 下的最大现金为 `dp[i][j]`
+
+这样就比较容易写出递推公式了，具体可看代码
+
+我这里想说一下初始化，`dp[0][3] = - prices[0]`
+
+我们可以理解为，在第 0 天买入又卖出，然后再次买入
+
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day70/0123_best_time_to_buy_and_sell_stock_iii.go)
