@@ -39,3 +39,21 @@
 这也提醒了我，这种情况下说明我们细分的状态不合适，需要重新分类或者继续拆分！
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day71/0309_best_time_to_buy_and_sell_stock_with_cooldown.go)
+
+### 714 买卖股票的最佳时机含手续费
+
+题目链接：https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
+
+文章讲解：https://programmercarl.com/0714.%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA%E5%90%AB%E6%89%8B%E7%BB%AD%E8%B4%B9%EF%BC%88%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%EF%BC%89.html
+
+视频讲解：https://www.bilibili.com/video/BV1z44y1Z7UR
+
+#### 思路
+
+这道题需要注意的一点就是一笔交易只计算一次手续费，那么要么是在买入时计算，那么是在卖出时计算
+
+如果是在买入时计算的话，在初始化也记得要先减去哦！
+
+切不可多次计算！
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day71/0714_best_time_to_buy_and_sell_stock_with_transaction_fee.go)
