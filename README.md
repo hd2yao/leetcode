@@ -52,6 +52,7 @@
 + Day66：动态规划 198 213 337
 + Day67：动态规划 121 122
 + Day70：动态规划 123 188
++ Day71：动态规划 309 714
 
 ### [数组](https://github.com/hd2yao/leetcode/tree/master/array)
 + 二分查找
