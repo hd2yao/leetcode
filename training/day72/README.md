@@ -21,3 +21,19 @@
 如果 `nums[j]` 小于 `nums[i]`，那么 `dp[i]` 至少为 `dp[j] + 1`
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day72/0300_longest_increasing_subsequence.go)
+
+### 674 最长连续递增子序列
+
+题目链接：https://leetcode.cn/problems/longest-continuous-increasing-subsequence/
+
+文章讲解：https://programmercarl.com/0674.%E6%9C%80%E9%95%BF%E8%BF%9E%E7%BB%AD%E9%80%92%E5%A2%9E%E5%BA%8F%E5%88%97.html
+
+视频讲解：https://www.bilibili.com/video/BV1bD4y1778v
+
+#### 思路
+
+有了上一题的经验，本题就容易写出来了
+
+因为需要连续，所以只需要与前一个元素比较即可
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day72/0674_longest_continuous_increasing_subsequence.go)
