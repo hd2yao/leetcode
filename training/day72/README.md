@@ -37,3 +37,21 @@
 因为需要连续，所以只需要与前一个元素比较即可
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day72/0674_longest_continuous_increasing_subsequence.go)
+
+### 718 最长重复子数组
+
+题目链接：https://leetcode.cn/problems/maximum-length-of-repeated-subarray/
+
+文章讲解：https://programmercarl.com/0718.%E6%9C%80%E9%95%BF%E9%87%8D%E5%A4%8D%E5%AD%90%E6%95%B0%E7%BB%84.html
+
+视频讲解：https://www.bilibili.com/video/BV178411H7hV
+
+#### 思路
+
+`dp[i][j]` ：以下标 `i - 1` 为结尾的 nums1，和以下标 `j - 1` 为结尾的 nums2，最长重复子数组长度为 `dp[i][j]`
+
+正如我们开始做动态规划的题目一样，使用 i-1 和 j-1 就是为了在初始化的时候方便
+
+如果直接使用 i 和 j，那么就必须要先初始化第一行和第一列，因为 i = 0 和 j = 0 时都是有意义的
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day72/0718_maximum_length_of_repeated_subarray.go)
