@@ -37,3 +37,26 @@
 手动画一下图就知道了，然后看一下连线的数值就能清晰的知道了
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day73/1035_uncrossed_lines.go)
+
+### 53 最大子数组和
+
+题目链接：https://leetcode.cn/problems/maximum-subarray/
+
+文章讲解：https://programmercarl.com/0053.%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%92%8C%EF%BC%88%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%EF%BC%89.html
+
+视频讲解：https://www.bilibili.com/video/BV19V4y1F7b5
+
+#### 思路
+
+本题在之前的贪心法中做过一次
+
+使用动态规划也是比较简单的
+
+不过这里还有有一些小坑：初始化，
+
+- dp[0] 的初始化应该是 nums[0] 而不是 0
+- 最大值的初始化也应该是 nums[0] 而不是 0
+
+原因就在于，如果一个数组全是负数，这样一个例子就可以明白了吧
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day73/0053_maximum_subarray.go)
