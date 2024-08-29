@@ -191,3 +191,7 @@
 #### Day72
 - 2024.08.28
 - [动态规划 300 674 718](https://github.com/hd2yao/leetcode/tree/master/training/day72)
+
+#### Day73
+- 2024.08.29
+- [动态规划 1143 1035 53](https://github.com/hd2yao/leetcode/tree/master/training/day73)
