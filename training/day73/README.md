@@ -22,3 +22,18 @@
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day73/1143_longest_common_subsequence.go)
 
+### 1035 不相交的线
+
+题目链接：https://leetcode.cn/problems/uncrossed-lines/
+
+文章讲解：https://programmercarl.com/1035.%E4%B8%8D%E7%9B%B8%E4%BA%A4%E7%9A%84%E7%BA%BF.html
+
+视频讲解：https://www.bilibili.com/video/BV1h84y1x7MP
+
+#### 思路
+
+换汤不换药 还是求最长公共子序列！
+
+手动画一下图就知道了，然后看一下连线的数值就能清晰的知道了
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day73/1035_uncrossed_lines.go)
