@@ -30,3 +30,31 @@
 因为我们 dp 并不是计数，所以每次 `dp[i][j] = true` 时，我们计数加一
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day78/0647_palindromic_substrings.go)
+
+### 516 最长回文子序列
+
+题目链接：https://leetcode.cn/problems/longest-palindromic-subsequence/
+
+文章讲解：https://programmercarl.com/0516.%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E5%BA%8F%E5%88%97.html
+
+视频讲解：https://www.bilibili.com/video/BV1d8411K7W6/
+
+#### 思路
+
+我们定义一个二维数组 `dp[i][j]`，表示字符串 `s` 从索引 `i` 到 `j` 的子序列的最长回文子序列的长度
+
+状态转移方程：
+
+- 如果 `s[i] == s[j]`，那么 `dp[i][j] = dp[i+1][j-1] + 2`
+
+  - 因为如果两个字符相等，它们可以构成回文的两端
+
+- 如果 `s[i] != s[j]`，那么 `dp[i][j] = max(dp[i+1][j], dp[i][j-1])`
+
+  - 这是因为如果这两个字符不相等，那么我们只能分别去掉 `s[i]` 或 `s[j]`，取这两种情况中的最大值
+  
+初始状态，对于所有的单个字符，`dp[i][i] = 1`，因为任何一个字符都是回文子序列
+
+我们需要从短的子串开始，逐步扩展到更长的子串，以确保计算 `dp[i][j]` 时，`dp[i+1][j-1]` 已经计算出来
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day78/0516_longest_palindromic_subsequence.go)
