@@ -1,6 +1,6 @@
 ## day79
 
-## 代码随想录算法训练营第七十九天| 单调栈 739 496
+## 代码随想录算法训练营第七十九天| 单调栈 739 496 503
 
 ### 739 每日温度
 
@@ -60,3 +60,30 @@
 还有一点需要注意的是，上一题要我们求位置，本题要求数字，要懂得转换
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day79/0496_next_qreater_element_i.go)
+
+### 503 下一个更大的元素2
+
+题目链接：https://leetcode.cn/problems/next-greater-element-ii/
+
+文章讲解：https://programmercarl.com/0503.%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%9B%B4%E5%A4%A7%E5%85%83%E7%B4%A0II.html
+
+视频讲解：https://www.bilibili.com/video/BV15y4y1o7Dw/
+
+#### 思路
+
+比较简单的想法是，把两个 nums 拼接到一起，然后使用单调栈去做，最后只取前半部分即可
+
+那么更精简的做法就是，不拼接扩容，只是在遍历的时候模拟走两遍，如下
+
+```go
+for i := 0; i < len(nums)*2; i++ {
+  for len(stack) != 0 && nums[stack[len(stack)-1]] < nums[i%len(nums)] {
+    index := stack[len(stack)-1]
+    answer[index] = nums[i%len(nums)]
+    stack = stack[:len(stack)-1]
+  }
+  stack = append(stack, i%len(nums))
+}
+```
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day79/0503_next_qreater_element_ii.go)
