@@ -1,5 +1,6 @@
 package day79
 
+// 拼接
 func nextGreaterElements(nums []int) []int {
     newNums := make([]int, 0)
     newNums = append(newNums, nums...)
@@ -23,6 +24,7 @@ func nextGreaterElements(nums []int) []int {
     return answer[:len(nums)]
 }
 
+// 模拟拼接过程
 func nextGreaterElements2(nums []int) []int {
     stack := make([]int, 0)
     answer := make([]int, len(nums))
