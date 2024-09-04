@@ -34,3 +34,29 @@
 - 元素大于栈顶元素，说明找了第一个大的元素，计算下标差值，然后先出栈再将新元素入栈
 
 [完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day79/0739_daily_temperatures.go)
+
+### 496 下一个更大元素1
+
+题目链接：https://leetcode.cn/problems/next-greater-element-i/
+
+文章讲解：https://programmercarl.com/0496.%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%9B%B4%E5%A4%A7%E5%85%83%E7%B4%A0I.html
+
+视频讲解：https://www.bilibili.com/video/BV1jA411m7dX/
+
+#### 思路
+
+本题的思路跟上一题类似，
+
+- 先对 nums2 使用单调栈计算结果
+ 
+  - 这里使用 map 来替代 slice，因为数组中的元素不会重复
+
+- 然后遍历 nums1 在 map 中去寻找结果
+
+  - 可以理解成按照 nums1 中的顺序对 map 的结果进行部分排序
+
+这样，本题的整体过程就出来了
+
+还有一点需要注意的是，上一题要我们求位置，本题要求数字，要懂得转换
+
+[完整代码](https://github.com/hd2yao/leetcode/tree/master/training/day79/0496_next_qreater_element_i.go)
