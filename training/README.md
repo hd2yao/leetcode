@@ -212,6 +212,6 @@
 - 2024.09.04
 - [单调栈 739 496 503](https://github.com/hd2yao/leetcode/tree/master/training/day79)
 
-#### Day80
+#### Day80 一刷完成！
 - 2024.09.05
 - [单调栈 42 84](https://github.com/hd2yao/leetcode/tree/master/training/day80)

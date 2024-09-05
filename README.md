@@ -59,7 +59,7 @@
 + Day77：动态规划 583 72
 + Day78：动态规划 647 516
 + Day79：单调栈 739 496 503
-+ Day80：单调栈 42 84
++ Day80：单调栈 42 84 一刷完成！
 
 ### [数组](https://github.com/hd2yao/leetcode/tree/master/array)
 + 二分查找
