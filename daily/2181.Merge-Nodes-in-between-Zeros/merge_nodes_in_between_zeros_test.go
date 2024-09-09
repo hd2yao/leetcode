@@ -2,8 +2,9 @@ package _181_Merge_Nodes_in_between_Zeros
 
 import (
     "fmt"
-    "github.com/hd2yao/leetcode/structures"
     "testing"
+
+    "github.com/hd2yao/leetcode/structures"
 )
 
 type question2181 struct {
