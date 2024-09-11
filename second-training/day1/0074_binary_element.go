@@ -1,4 +1,4 @@
-package _704_Binary_Search
+package day1
 
 // 左闭右开
 func search(nums []int, target int) int {
