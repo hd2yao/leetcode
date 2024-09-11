@@ -1,5 +1,13 @@
 package day1
 
+/**
+
+  本题中，当滑动窗口的右边界到数组末尾时就结束了
+  因此，当我们控制右边界，用 for 来控制左边界时，会需要跳出；
+  而用 for 来控制右边界时不需要
+
+*/
+
 // 控制滑动窗口右边界
 func minSubArrayLenRight(target int, nums []int) int {
     right := 0
